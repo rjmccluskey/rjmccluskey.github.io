@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://rjmccluskey.github.io/sitemap.xml 
