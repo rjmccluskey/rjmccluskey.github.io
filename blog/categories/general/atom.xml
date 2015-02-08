@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Rich Code]]></title>
-  <link href="http://rjmccluskey.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: General | Rich Code]]></title>
+  <link href="http://rjmccluskey.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
   <updated>2015-02-07T21:32:11-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
