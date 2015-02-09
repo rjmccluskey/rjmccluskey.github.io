@@ -1,8 +1,11 @@
 ---
 layout: page
 title: "projects"
-date: 2015-02-09 10:32
 comments: false
 sharing: true
-footer: true
+footer: false
+description: "Take a look at some of the projects I've been working on!"
 ---
+
+## [Smooth Transaction](https://smooth-transaction.herokuapp.com/)
+
