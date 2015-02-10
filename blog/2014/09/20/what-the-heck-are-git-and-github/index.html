@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>What the Heck Are Git and GitHub? - Rich Code</title>
+  <meta name="author" content="Rich McCluskey">
+
+  
+  <meta name="description" content="I'm just finishing my very first week of Phase 0 at Dev Bootcamp and it has far exceeded my expectations! I am amazed at how much I have already &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rjmccluskey.github.io/blog/2014/09/20/what-the-heck-are-git-and-github/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rich Code" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rich Code</a></h1>
+  
+    <h2>Rich McCluskey | Software Developer</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="rjmccluskey.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">What the Heck Are Git and GitHub?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-20T17:39:27-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>5:39 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&#8217;m just finishing my very first week of Phase 0 at Dev Bootcamp and it has far exceeded my expectations! I am amazed at how much I have already learned in less than one week and I am stoked to see what&#8217;s next! The vibe here is nothing but motivational and supportive, which is pretty astonishing considering no one has even met in person yet. And as part of the educational experience I am going to share some stuff I&#8217;ve been learning!</p>
+
+
+<!-- more -->
+
+
+<p>I want to talk to you about Git and GitHub. Most of this first week&#8217;s material has been on that subject and for good reason. So what is Git? What is GitHub? Well, to really answer those questions I need to tell you about my little friend version control. Version control remembers all the changes you&#8217;ve made to certain files on your computer and when you&#8217;ve made them. And it even lets you collaborate with others on those same files because it has the ability to merge them together! Imagine the following scenario. You are a scientist researching the effectiveness of different coffees from all over the world (ahh, science!). But you don&#8217;t have the time or the funds to do all the research yourself, so you recruit a team of scientists from different countries to help you with your work. One way to do this would be to have everyone send you their findings separately, and then figure out how to put it all together into a research paper yourself. Or, we can use our buddy version control and have everyone work on the same research paper at the same time! Whenever anyone adds some new data or a new finding, this would be logged and then you can pick and choose what to merge into your master file! And if you change something and decide an earlier version of your paper was better you can easily revert back. Isn&#8217;t that great?!</p>
+
+
+
+
+<p>So how do we actually use version control? Well, that&#8217;s exactly what Git is for! Git is a version control program that runs locally on your computer. Unlike most software, it doesn&#8217;t have a graphical user interface (GUI) and you use your command line to control it. If you are unfamiliar with your command line and how to use it, check out these resources: <a href="http://lifehacker.com/5633909/">A Command Line Primer for Beginners</a>, <a href="http://cli.learncodethehardway.org/book/">The Command Line Crash Course</a>. You assign projects into repositories (repos). A repo is simply a file structure that Git knows to keep track of. Whenever you make a significant change to your repo, you save this change by making a &#8220;commit.&#8221; All your commits are logged for the entirety of the project and you can revert your repo back to any of them at any time! You can even make different versions of your repo with &#8220;branches.&#8221; By default, your repo starts out with the &#8220;master branch&#8221; and other branches can be &#8220;merged&#8221; into your master. This is all great when you are working by yourself, but wouldn&#8217;t it be even more awesome if there was a copy of your repo that lived on the Internet for you and other people to collaborate on?!</p>
+
+
+
+
+<p>You&#8217;re in luck! <a href="http://www.github.com">GitHub</a> is like Facebook for Git users. It is literally an online &#8220;hub&#8221; for you to store your repos and see other people&#8217;s projects as well. And Git syncs with it! You can &#8220;push&#8221; your commits to GitHub, and &#8220;pull&#8221; any commits from GitHub that aren&#8217;t on your computer yet. If you like someone&#8217;s public project and want to create your own from theirs, you can &#8220;fork&#8221; it into your own separate repo and then &#8220;clone&#8221; that repo to your computer. If they update their repo and you want to get their changes, you do this by &#8220;fetching.&#8221; Now for the really cool part. You can even try to convince others to use your changes from your forked repo by sending them a &#8220;pull request.&#8221; That&#8217;s the real beauty of open source software!</p>
+
+
+
+
+<p>So hopefully you now have a better idea what Git and GitHub are and the differences between them. There&#8217;s still a ton more to learn before you can use them but understanding their concepts is an important start. Thanks for reading! :)</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rich McCluskey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-09-20T17:39:27-07:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>5:39 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/github/'>github</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rjmccluskey.github.io/blog/2014/09/20/what-the-heck-are-git-and-github/" data-via="rjmccluskey" data-counturl="http://rjmccluskey.github.io/blog/2014/09/20/what-the-heck-are-git-and-github/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/16/dev-bootcamp-is-more-than-just-learning-to-code/" title="Previous Post: Dev Bootcamp is more than just learning to code">&laquo; Dev Bootcamp is more than just learning to code</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/09/20/is-dev-bootcamp-a-restaurant-or-a-kitchen/" title="Next Post: Is Dev Bootcamp a Restaurant or a Kitchen?">Is Dev Bootcamp a Restaurant or a Kitchen? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/09/20/is-dev-bootcamp-a-restaurant-or-a-kitchen/">Is Dev Bootcamp a Restaurant or a Kitchen?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/20/what-the-heck-are-git-and-github/">What the Heck Are Git and GitHub?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/16/dev-bootcamp-is-more-than-just-learning-to-code/">Dev Bootcamp Is More Than Just Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/09/taking-a-leap/">Taking a Leap</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/rjmccluskey">@rjmccluskey</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'rjmccluskey',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rich McCluskey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'richcode';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rjmccluskey.github.io/blog/2014/09/20/what-the-heck-are-git-and-github/';
+        var disqus_url = 'http://rjmccluskey.github.io/blog/2014/09/20/what-the-heck-are-git-and-github/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
