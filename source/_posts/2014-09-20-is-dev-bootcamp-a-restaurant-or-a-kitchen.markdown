@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Is Dev Bootcamp a Restaurant or a Kitchen?"
+date: 2014-09-20 16:44:40 -0800
+comments: true
+categories: General
+---
+<p>I just watched a very interesting Fireside chat with the founder of Dev Bootcamp, Shereef Bishay. In the video he explains how DBC was created and the attitude the students and instructors should have for the best possible experience. In Shereef's opinion, DBC is more of a kitchen than a restaurant. <!-- more --> In a restaurant, you look at a menu and decide what you like and if you are willing to pay for it. After deciding, you expect to sit back while the waiters and the chefs get you exactly what you ordered. Most traditional education systems work this way, but not DBC! Shereef goes on to explain that at DBC you are part of the kitchen. Your education is really up to how hungry you are to learn. Of course there is a curriculum and teachers but its up to you to seek out help and help others. In the kitchen, everyone gets their hands dirty and everyone contributes to what is happening. DBC isn't just mindless lectures followed by tests. It has structure but there's also room for creativity. Because of this, it seems that DBC is constantly evolving into a stronger and stronger monster that feeds on knowledge and curiosity!</p>
+
+<p>So what's my impression on DBC so far? Freakin' awesome! I can't imagine a better learning experience. Don't get me wrong, I am pretty nervous about all the work. But I'm excited by the challenge. I definitely fell into the restaurant mindset in the past but I am going to make a conscious effort to "stay in the kitchen" while at DBC. I think it might be a bit hard at first, because I am a little introverted, but I know that many other boots will be in the same position as me and that is encouraging.</p>
