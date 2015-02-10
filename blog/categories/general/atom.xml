@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-07T21:59:02-08:00</updated>
+  <updated>2015-02-09T16:03:40-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Dev Bootcamp Is More Than Just Learning to Code]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/09/16/dev-bootcamp-is-more-than-just-learning-to-code/"/>
+    <updated>2014-09-16T22:46:38-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/09/16/dev-bootcamp-is-more-than-just-learning-to-code</id>
+    <content type="html"><![CDATA[<p>I have officially started Phase 0 of <a href="http://devbootcamp.com">devbootcamp</a> and right away we are being challenged to research mindfulness, productivity, and time management. At first I was a little apprehensive to do this because I was really itching to get straight to writing code, but I continued on and actually discovered some really awesome stuff!</p>
+
+<!-- more -->
+
+
+<p>The next ~18 weeks are gonna be really intense. I knew they would be before I even applied to DBC, but now that I have started the curriculum I am beginning to truly understand what that means. I’m not gonna lie. It’s scary. But I’m so pumped at the same time! And I realize that we are spending time to learn things like mindfulness so that we not only keep our sanity, but also to develop ourselves as human beings. You might even say that DBC isn’t only about web development, but self development too.</p>
+
+<p>So what am I gonna do during Phase 0 to keep myself on tract and reduce stress? First, I want to dabble with meditation and what better way to learn to meditate than to use a web app! <a href="https://www.headspace.com/">Headspace</a> is like a “gym membership for the mind” and offers quick exercises to get you meditating. Second, I’m gonna try to implement the <a href="http://pomodorotechnique.com/">Pomodoro Technique</a> into my studies. If you’ve never heard of this before, it basically involves working in 25 minute increments with time to reflect on your work. And thirdly, I want to give myself a little slack. This <a href="http://paidtoexist.com/counterintuitive-productivity/">article</a> on productivity says it best: “Relax your expectations of constant, never-ceasing production. Instead, focus your energies on how you want to feel and what you need to operate with greatness… The key is in learning to identify and honor your natural rhythms. Listen and lean into whatever you’re being pulled to.”</p>
+
+<p>Alright, I’m off to bed! Hopefully my next entry will have some actual code in it! ;)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Taking a Leap]]></title>
