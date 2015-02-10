@@ -3,7 +3,7 @@ layout: post
 title: "Dev Bootcamp is more than just learning to code"
 date: 2014-09-16 21:46:38 -0800
 comments: true
-categories:
+categories: General
 ---
 I have officially started Phase 0 of [devbootcamp](http://devbootcamp.com) and right away we are being challenged to research mindfulness, productivity, and time management. At first I was a little apprehensive to do this because I was really itching to get straight to writing code, but I continued on and actually discovered some really awesome stuff!
 <!-- more -->
