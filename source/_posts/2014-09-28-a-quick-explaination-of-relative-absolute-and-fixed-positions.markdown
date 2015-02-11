@@ -3,7 +3,7 @@ layout: post
 title: "A quick explaination of relative, absolute, and fixed positions"
 date: 2014-9-28 12:55:47 -0800
 comments: true
-categories:
+categories: CSS
 ---
 <p>This last week has been intense! I’ve basically gone from zero knowledge of HTML and CSS to creating this very website you are reading this on. But don’t be fooled! I put in a ton of work and had to battle though some major frustration to get here. So what was the hardest part for me to learn? By far it was understanding CSS positioning.</p>
 <!-- more -->
