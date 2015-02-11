@@ -4,7 +4,7 @@
   <title><![CDATA[Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-10T10:14:28-08:00</updated>
+  <updated>2015-02-11T13:19:23-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -12,6 +12,143 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using Arrays and Hashes in Ruby]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/"/>
+    <updated>2014-10-05T14:06:11-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby</id>
+    <content type="html"><![CDATA[<p>Time for another coding lesson. So what&#8217;s on the table for this week? Why, it&#8217;s our good fiends <span class="italic">arrays</span> and <span class="italic">hashes</span>.</p>
+
+
+<!-- more -->
+
+
+<p>So what are they? Well, to put it simply, they are fancy variables that we can use to store lists of data. A normal, boring variable stores just one value. But with arrays and hashes we can store an endless amount! We can even use them to store other arrays and hashes! So why do we have two types and what are the differences between the two?</p>
+
+
+
+
+<p>To give you an answer to that last question, let me first explain what arrays are. As you already know an array is a list of data. In ruby, you create an array with square brackets `[&#8230;]` and separate the values with commas. So for example if you wanted an array named <span class="italic">array</span> (I know, very creative right?!) containing three strings, &#8220;one&#8221; &#8220;two&#8221; and &#8220;three&#8221; you&#8217;d do so like this:</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="s2">&quot;three&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>But there&#8217;s something important to know about arrays. Each value in an array is assigned a number. This is important for when you want to call one of those values. But instead of starting with the number 1, the first value inside an array is assigned the number 0. So remember that super sweet array we just created? Well, the first value, &#8220;one&#8221;, is assigned as 0, &#8220;two&#8221; is assigned as 1, and &#8220;three&#8221; is assigned as 2. So if you wanted to print the &#8220;first&#8221; value from your array to the screen, you&#8217;d do so like this:</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="nb">puts</span> <span class="n">array</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>Arrays are great when you want order to your list. The order can be manipulated in all sorts of ways! A simple example would be a list of names that you want to then alphabetize. But what if you don&#8217;t care so much about the order and you want to describe the values with something different than numbers? This is exactly where hashes come into play! With hashes, you can assign values with whatever you want. Hashes are lists of &#8220;key:value pairs&#8221;. Keys must be unique but values can be repeated. So let&#8217;s say you wanted to create a hash of people&#8217;s names and their eye color. You could do it like this:</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="n">eye_color</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">Richard</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="ss">Natalie</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="ss">Bob</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>As you can see, instead of the square brackets hashes use curly braces `{&#8230;}`. If you want to print Bob&#8217;s eye color, you could do so like this: </p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="nb">puts</span> <span class="n">eye_color</span><span class="o">[</span><span class="ss">:Bob</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>Calling a value from a hash uses square brackets just like an array, and make sure to put the colon ( : ) in front of the key. The order of hashes are a bit more arbitrary, but they are better than arrays to use in certain situations.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What Are You Thinking?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/05/what-are-you-thinking/"/>
+    <updated>2014-10-05T13:50:29-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/05/what-are-you-thinking</id>
+    <content type="html"><![CDATA[<p>At Dev Bootcamp we are learning a ton of stuff. That&#8217;s obvious. But, as a DBC student, it makes me wonder how I will retain as much information as possible. The reality is we all have different thinking styles and we all learn in different ways so how can I make sure I am learning in the best environment? Well, a good place to start is to actually narrow down my thinking style. Luckily, DBC had us do this before we even started Phase 0!</p>
+
+
+<!-- more -->
+
+
+<p>According to Anthony Gregorc, there are <a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">four main thinking styles</a>. These are concrete sequential, concrete random, abstract sequential, and abstract random. I don&#8217;t want to bore you with the details, but let&#8217;s quickly go over what each of those means. This <a href="http://www.thelearningweb.net/personalthink.html">thinking style test</a> sums it up best: <blockquote><span class="italic">&#8220;Concrete Sequential Thinkers tend to be based in reality. They process information in an ordered, sequential, linear way. Concrete Random Thinkers are experimenters. Abstract Random Thinkers organize information through reflection, and thrive in unstructured, people-oriented environments. Abstract Sequential Thinkers love the world of theory and abstract thought.&#8221;</span></blockquote></p>
+
+
+
+
+<p>So I know you&#8217;re dying to know my thinking style, right?! Well after I took that test, it turns out that I am a tie between concrete random and abstract random. At first I thought this was a little weird and wondered if I had messed up the test somehow. But the more I thought about it, the more it made complete sense. I love to experiment and get my hands dirty. If I&#8217;m not actually typing in code and testing it, I will not learn. And that goes for using code incorrectly. I like to make errors because it teaches me more about how my computer actually interprets the code that I am giving it. But I also learn a lot from others and, even if sometimes I&#8217;d rather work alone, being in a team helps to motivate me.</p>
+
+
+
+
+<p>Now that I understand my style, I can be strategic and use it to my advantage. Making sure to do plenty of practice problems and seeking out others to pair with will probably be the best thing for me. Looking back on my experience with Phase 0 so far, I can see how I&#8217;ve already done this and how I&#8217;ve strayed away to my disadvantage. At first, I wasn&#8217;t so eager to pair program because I wanted to go through everything by myself first. This might have been due to my concrete random qualities. But I think I ended up spending a lot more time on topics that I could have understood quicker had I been pairing. These same concrete random qualities were making me chase down rabbit holes and without someone else there to pull me back, I went pretty dang far down some of these holes! However, this last week I have been pairing a lot more and I am really starting to see why DBC is all about it. Sometimes it&#8217;s a bit of a struggle for me to navigate because I want my hands on the keyboard, but explaining to another person my ideas without just spilling them into my computer has helped me to be more careful with my organization.</p>
+
+
+
+
+<p>While it&#8217;s obvious that we all have different natural thinking styles, I still think it is important to challenge yourself outside of this definition. For example, concrete sequential thinkers might say that they can&#8217;t work in groups because it&#8217;s just the way they think. But because we live with other people, having this mindset could be a detriment. DBC tells its students to explore the differences between <a href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/">growth and fixed mindsets</a>. I personally agree that we can all have a &#8220;growth mindset&#8221; and, for the most part, we are not limited to natural abilities or intelligence. It&#8217;s good to know your thinking style to create a good learning environment, but it doesn&#8217;t have to define everything you do.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Quick Explaination of Relative, Absolute, and Fixed Positions]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/09/28/a-quick-explaination-of-relative-absolute-and-fixed-positions/"/>
+    <updated>2014-09-28T13:55:47-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/09/28/a-quick-explaination-of-relative-absolute-and-fixed-positions</id>
+    <content type="html"><![CDATA[<p>This last week has been intense! I’ve basically gone from zero knowledge of HTML and CSS to creating this very website you are reading this on. But don’t be fooled! I put in a ton of work and had to battle though some major frustration to get here. So what was the hardest part for me to learn? By far it was understanding CSS positioning.</p>
+
+
+<!-- more -->
+
+
+<p>I still have a long ways to go before I’m an expert with positioning, but I’ve learned some important basics that I’m gonna share with you right now! So to get you started, let’s discuss the conceptual differences between relative, absolute, and fixed positions.</p>
+
+
+<p class="bold">Relative Position</p>
+
+
+<p>When an element&#8217;s position is set to &#8220;relative&#8221; you can move it around <span class="italic">relative</span> to where it would normally be displayed. Let&#8217;s say you have an image inside of your footer with a relative position. By default, this image should just show up inside your footer on the left side. Setting &#8220;right: 10px;&#8221; will place the image 10 pixels from the right side of your footer. So in other words, this image has moved <span class="italic">relative</span> to the footer. Pretty simple right?! Give it some practice and try for yourself!</p>
+
+
+<p class="bold">Absolute Position</p>
+
+
+<p>Think of an element with an &#8220;absolute&#8221; position as suck on the page like a sticker. It ignores any other elements and is placed on the page exactly where you tell to to be! If you place it 300px from the top and 40px from the left, it will always be 300px from the top and 40px from the left. The only thing it is positoned relative to is the entire web page itself.</p>
+
+
+<p class="bold">Fixed Position</p>
+
+
+<p>An element with a &#8220;fixed&#8221; position doesn&#8217;t move for anyone! Other elements can&#8217;t push it around and even scrolling will not move it. Fixed positioning is great for when you want a menu bar that always shows up no matter where you are on the page.</p>
+
+
+<p>So there you have it! It&#8217;s important to solidify these concepts before you start messing with positioning stuff on your website. Sorry it&#8217;s so brief but it&#8217;s late and I need some sleep! ;)</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Is Dev Bootcamp a Restaurant or a Kitchen?]]></title>

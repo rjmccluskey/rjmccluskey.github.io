@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby | Rich Code]]></title>
+  <link href="http://rjmccluskey.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://rjmccluskey.github.io/"/>
+  <updated>2015-02-11T13:19:23-08:00</updated>
+  <id>http://rjmccluskey.github.io/</id>
+  <author>
+    <name><![CDATA[Rich McCluskey]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Using Arrays and Hashes in Ruby]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/"/>
+    <updated>2014-10-05T14:06:11-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby</id>
+    <content type="html"><![CDATA[<p>Time for another coding lesson. So what&#8217;s on the table for this week? Why, it&#8217;s our good fiends <span class="italic">arrays</span> and <span class="italic">hashes</span>.</p>
+
+
+<!-- more -->
+
+
+<p>So what are they? Well, to put it simply, they are fancy variables that we can use to store lists of data. A normal, boring variable stores just one value. But with arrays and hashes we can store an endless amount! We can even use them to store other arrays and hashes! So why do we have two types and what are the differences between the two?</p>
+
+
+
+
+<p>To give you an answer to that last question, let me first explain what arrays are. As you already know an array is a list of data. In ruby, you create an array with square brackets `[&#8230;]` and separate the values with commas. So for example if you wanted an array named <span class="italic">array</span> (I know, very creative right?!) containing three strings, &#8220;one&#8221; &#8220;two&#8221; and &#8220;three&#8221; you&#8217;d do so like this:</p>
+
+
+<pre><code class="Ruby">array = ["one","two","three"]
+</code></pre>
+
+<p>But there&#8217;s something important to know about arrays. Each value in an array is assigned a number. This is important for when you want to call one of those values. But instead of starting with the number 1, the first value inside an array is assigned the number 0. So remember that super sweet array we just created? Well, the first value, &#8220;one&#8221;, is assigned as 0, &#8220;two&#8221; is assigned as 1, and &#8220;three&#8221; is assigned as 2. So if you wanted to print the &#8220;first&#8221; value from your array to the screen, you&#8217;d do so like this:</p>
+
+
+<pre><code class="Ruby">puts array[0]
+</code></pre>
+
+<p>Arrays are great when you want order to your list. The order can be manipulated in all sorts of ways! A simple example would be a list of names that you want to then alphabetize. But what if you don&#8217;t care so much about the order and you want to describe the values with something different than numbers? This is exactly where hashes come into play! With hashes, you can assign values with whatever you want. Hashes are lists of &#8220;key:value pairs&#8221;. Keys must be unique but values can be repeated. So let&#8217;s say you wanted to create a hash of people&#8217;s names and their eye color. You could do it like this:</p>
+
+
+<pre><code class="Ruby">eye_color = { Richard: "blue", Natalie: "green", Bob: "green" }
+</code></pre>
+
+<p>As you can see, instead of the square brackets hashes use curly braces `{&#8230;}`. If you want to print Bob&#8217;s eye color, you could do so like this: </p>
+
+
+<pre><code class="Ruby">puts eye_color[:Bob]
+</code></pre>
+
+<p>Calling a value from a hash uses square brackets just like an array, and make sure to put the colon ( : ) in front of the key. The order of hashes are a bit more arbitrary, but they are better than arrays to use in certain situations.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

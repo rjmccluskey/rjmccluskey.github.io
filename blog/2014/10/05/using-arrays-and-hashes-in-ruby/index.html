@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Using Arrays and Hashes in Ruby - Rich Code</title>
+  <meta name="author" content="Rich McCluskey">
+
+  
+  <meta name="description" content="Time for another coding lesson. So what's on the table for this week? Why, it's our good fiends arrays and hashes. So what are they? Well, to put it &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rich Code" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rich Code</a></h1>
+  
+    <h2>Rich McCluskey | Software Developer</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="rjmccluskey.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Using Arrays and Hashes in Ruby</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-05T14:06:11-07:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>2:06 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Time for another coding lesson. So what&#8217;s on the table for this week? Why, it&#8217;s our good fiends <span class="italic">arrays</span> and <span class="italic">hashes</span>.</p>
+
+
+<!-- more -->
+
+
+<p>So what are they? Well, to put it simply, they are fancy variables that we can use to store lists of data. A normal, boring variable stores just one value. But with arrays and hashes we can store an endless amount! We can even use them to store other arrays and hashes! So why do we have two types and what are the differences between the two?</p>
+
+
+
+
+<p>To give you an answer to that last question, let me first explain what arrays are. As you already know an array is a list of data. In ruby, you create an array with square brackets `[&#8230;]` and separate the values with commas. So for example if you wanted an array named <span class="italic">array</span> (I know, very creative right?!) containing three strings, &#8220;one&#8221; &#8220;two&#8221; and &#8220;three&#8221; you&#8217;d do so like this:</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="n">array</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="s2">&quot;three&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>But there&#8217;s something important to know about arrays. Each value in an array is assigned a number. This is important for when you want to call one of those values. But instead of starting with the number 1, the first value inside an array is assigned the number 0. So remember that super sweet array we just created? Well, the first value, &#8220;one&#8221;, is assigned as 0, &#8220;two&#8221; is assigned as 1, and &#8220;three&#8221; is assigned as 2. So if you wanted to print the &#8220;first&#8221; value from your array to the screen, you&#8217;d do so like this:</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="nb">puts</span> <span class="n">array</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>Arrays are great when you want order to your list. The order can be manipulated in all sorts of ways! A simple example would be a list of names that you want to then alphabetize. But what if you don&#8217;t care so much about the order and you want to describe the values with something different than numbers? This is exactly where hashes come into play! With hashes, you can assign values with whatever you want. Hashes are lists of &#8220;key:value pairs&#8221;. Keys must be unique but values can be repeated. So let&#8217;s say you wanted to create a hash of people&#8217;s names and their eye color. You could do it like this:</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="n">eye_color</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">Richard</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="ss">Natalie</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="ss">Bob</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>As you can see, instead of the square brackets hashes use curly braces `{&#8230;}`. If you want to print Bob&#8217;s eye color, you could do so like this: </p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Ruby'><span class='line'><span class="nb">puts</span> <span class="n">eye_color</span><span class="o">[</span><span class="ss">:Bob</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>Calling a value from a hash uses square brackets just like an array, and make sure to put the colon ( : ) in front of the key. The order of hashes are a bit more arbitrary, but they are better than arrays to use in certain situations.</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rich McCluskey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-05T14:06:11-07:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>2:06 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/" data-via="rjmccluskey" data-counturl="http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/05/what-are-you-thinking/" title="Previous Post: What are you thinking?">&laquo; What are you thinking?</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/05/using-arrays-and-hashes-in-ruby/">Using Arrays and Hashes in Ruby</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/05/what-are-you-thinking/">What Are You Thinking?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/28/a-quick-explaination-of-relative-absolute-and-fixed-positions/">A Quick Explaination of Relative, Absolute, and Fixed Positions</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/20/is-dev-bootcamp-a-restaurant-or-a-kitchen/">Is Dev Bootcamp a Restaurant or a Kitchen?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/09/20/what-the-heck-are-git-and-github/">What the Heck Are Git and GitHub?</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/rjmccluskey">@rjmccluskey</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'rjmccluskey',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rich McCluskey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'richcode';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/';
+        var disqus_url = 'http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
