@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-12T11:30:07-08:00</updated>
+  <updated>2015-02-12T12:21:11-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -12,6 +12,404 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[So What About Rails?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/05/so-what-about-rails/"/>
+    <updated>2014-11-05T12:10:35-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/05/so-what-about-rails</id>
+    <content type="html"><![CDATA[<p>So up to this point of Phase 0 at <a href="http://devbootcamp.com">DBC</a> I&#8217;ve learned a ton of stuff. I&#8217;m now familiar with git and GitHub, HTML, CSS, Ruby, JavaScript, and even a little bit of SQL. Before I started DBC, I had heard of all these languages except that I never heard or read about Ruby by itself. It was always mentioned as &#8220;Ruby on Rails&#8221;. We won&#8217;t be getting into Rails until the immersive phases but I still want to know more about it since it seems to be so closely tied with Ruby. So let&#8217;s learn about Rails!</p>
+
+
+<!-- more -->
+
+
+<p>Stated simply, Ruby on Rails, or just Rails, is an open source web framework written in Ruby. Lots of different companies use RoR including Twitter and Github. Sounds good, except what exactly is a framework? To conceptually understand a framework let&#8217;s look at the frame of a building.</p>
+
+
+<p><img class="img-body" src="http://www.vermontframes.com/images/page-design-process.jpg"></p>
+
+<p>The framework of this house is not visually appealing and wouldn&#8217;t provide very good shelter by itself, but it is necessary for the structural integrity of the house and all other parts on the house require it before they can be added. It wouldn&#8217;t make very much sense to build just one wall with all the doors, windows, paint, and fixtures before having the frame built. I suppose you could build a house this way but it would take much longer and would be much more difficult.</p>
+
+
+
+
+<p>Just like the wooden frame is used to build a house, a web framework, such as Rails, is used to build web applications. Rails combines Ruby with HTML, CSS, and Javascript and by doing so creates the structure of our web app. Without a framework, we would have to make all these connections ourselves and there would be lots of repetition. Our code would take longer to make, be more prone to bugs, and be harder to implement new things later on.</p>
+
+
+
+
+<p>This is a pretty basic introduction to Rails, but hopefully you at least now know the difference between Ruby and Rails and how they work together. If you are interested to know more, I found a much more in depth article on the subject <a href="http://railsapps.github.io/what-is-ruby-rails.html">here</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Iterations - Ruby vs JavaScript]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/02/iterations-ruby-vs-javascript/"/>
+    <updated>2014-11-02T12:01:25-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/02/iterations-ruby-vs-javascript</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve started learning JavaScript this week and I have mixed feelings about it. At first it was just a pain in the ass. I&#8217;ve gotten pretty used to the wonders of ruby and how simple it can be. JavaScript on the other hand, can be pretty tough for a beginner. But as I got going I started to really like it because it is really fun to manipulate HTML elements. Anyways, to show you a little comparison between ruby and JS let&#8217;s take a look at how we can iterate through an array in both languages.</p>
+
+
+<!-- more -->
+
+
+<h3>Ruby</h3>
+
+
+
+
+<p>If you are using ruby and you have an array object, you can do something to each of the values in that array using the <span class="code">each</span> method. If that&#8217;s not straightforward I don&#8217;t know what is! Let me show you how it works with an example:</p>
+
+
+
+
+<pre class="code-window">
+# Ruby
+
+array = [1,2,3,4,5]
+array.each { |value| puts value }
+
+# 1
+# 2
+# 3
+# 4
+# 5</pre>
+
+
+
+
+<p>This built in method knows how to cycle though the array automatically. Once you get used to the syntax there really isn&#8217;t much to think about. Of course this is a simple example and it can get much more complicated but you get the idea.</p>
+
+
+
+
+<h3>JavaScript</h3>
+
+
+
+
+<p>Unfortunately, there is nothing built into JS to iterate as easy as we can in ruby. So far, the best way I&#8217;ve found to iterate as we did with the example above is by using a <span class="code">for</span> loop. Let&#8217;s do the exact same iteration in JS:</p>
+
+
+
+
+<pre class="code-window">
+// JavaScript
+
+var array = [1,2,3,4,5];
+for (var count = 0; count < array.length; count++) {
+  console.log(array[count]);
+}
+
+// 1
+// 2
+// 3
+// 4
+// 5</pre>
+
+
+
+
+<p>A quick comparison shows that there&#8217;s definitely a little more to think about when iterating in JS. Making our array is pretty similar except we use the keyword <span class="code">var</span> and we need a semi-colon at the end of the statement. Our <span class="code">for</span> loop takes three expressions. The first creates a new local variable <span class="code">count</span> and assigns an initial value of 0 to it. The second expression is used so that the loop knows when to stop. And the third expression adds 1 to <span class="code">count</span> after each loop. I think it&#8217;s pretty obvious that ruby wins when it comes to ease of iterating.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Varying Variables of Ruby]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/"/>
+    <updated>2014-10-25T13:05:51-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby</id>
+    <content type="html"><![CDATA[<p>If you&#8217;re at least a little familiar with ruby, or any programming language, you probably have an idea of what a variable is. Put <span class="italic">really</span> simply, it&#8217;s the thing you assign values to. Values can be blocks of code but ultimately they are a string, number, boolean, or groups of any combination of these stored in an array or hash. Why use variables? Well there&#8217;s many reasons but mainly it&#8217;s so you don&#8217;t have to write pieces of code over and over and over again. In today&#8217;s entry we&#8217;ll be going over the four main types of ruby variables and when to use them!</p>
+
+
+<!-- more -->
+
+
+<h3>#1 Local Variables</h3>
+
+
+
+
+<p>The most common type you will see is the <span class="italic">local variable</span>. Local variable names start with a lowercase letter or underscore and can include any combination of letters, numbers and underscores. <span class="code">my_variable</span>, <span class="code">h_84hdfa_574</span>, <span class="code">_stuff</span> and <span class="code">x</span> are all examples of local variables. Assigning a value to a local variable looks like this:</p>
+
+
+
+
+<pre class="code-window">example_variable = "Hello, world!"</pre>
+
+
+
+
+<p>From the above example, our local variable is <span class="code">example_variable</span> to which we assign the string <span class="code">&#8220;Hello, world!&#8221;</span>. Local variables are only accessible within their scope. Understanding scope deserves it&#8217;s own post, but for now you can think of it as a layer. When you start with a blank slate you are in the outermost layer, and adding things like classes, methods, or modules creates inner layers. A local variable defined in the <span class="italic">outer layer</span> can&#8217;t be used by any of the inner layers. And a local variable defined inside a method can only be used in the method definition. Take a look at the following example to get a better idea of what I mean:</p>
+
+
+
+
+<pre class="code-window">
+var1 = "apple"
+
+def make_apple_a_banana
+  var1 = "banana"
+end
+
+make_apple_a_banana
+puts var1</pre>
+
+
+
+
+<p>Since we use the same variable name <span class="code">var1</span> you might expect our method <span class="code">make_apple_a_banana</span> to change the assignment of <span class="code">var1</span>. But as we just learned, even though these variables have the same name, they don&#8217;t have the same scope. Therefore, running this code produces:</p>
+
+
+
+
+<pre class="code-window">apple</pre>
+
+
+
+
+<h3>#2 Global Variables</h3>
+
+
+
+
+<p>Unlike local variables, <span class="italic">global variables</span> can be accessed by anything, anywhere in your program. You can recognize a global variable because it starts with a dollar sign <span class="code">$</span>. Ruby has built-in global variables and you can create your own. However, a lot of programmers will tell you that making global variables is rarely a good idea because they can contradict the object orientated nature of ruby. But for the sake of learning let&#8217;s take a look at an example:</p>
+
+
+
+
+<pre class="code-window">
+$global_var = "Hello"
+
+def world_greeting
+  puts $global_var + " world!"
+end
+
+world_greeting
+
+=>
+Hello World!</pre>
+
+
+
+
+<p>If we had instead used a local variable, running <span class="code">world_greeting</span> would have gave us an undefined variable or method error.</p>
+
+
+
+
+<h3>#3 Instance Variables</h3>
+
+
+
+
+<p><span class="ital">Instance variables</span> are variables that are accessible inside an object, but only that object. You&#8217;ll usually use them in classes. Instance variable names always start with an at sign <span class="code">@</span>. Let&#8217;s make a new class to show you an example:</p>
+
+
+
+
+<pre class="code-window">
+class Cup
+  def initialize
+    @full = false
+  end
+
+  def fill
+    @full = true
+  end
+
+  def is_full?
+    @full
+  end
+end
+
+sippy_cup = Cup.new
+sippy_cup.fill
+sippy_cup.is_full?
+
+=> true</pre>
+
+
+
+
+<p>As you can see, our instance variable <span class="code">@full</span> can be used and manipulated in different method definitions within the class <span class="code">Cup</span>. Had we called <span class="code">@full</span> outside of our class, we would get an undefined variable error.</p>
+
+
+
+
+<h3>#4 Class Variables</h3>
+
+
+
+
+<p><span class="italic">Class variables</span> are kinda like global variables (and I use that comparison loosely) however they are scoped to their class hierarchy. They are designated by starting with two at signs <span class="code">@@</span>. They store values that are shared between a class and instances of that class, but they&#8217;re not visible to any other objects. So they differ from global variables in that they are not mutable and visible everywhere. Let&#8217;s look at an example to see what I mean:</p>
+
+
+
+
+<pre class="code-window">
+class Top
+  def initialize(x)
+    @@x = x
+  end
+
+  def get_x
+    @@x
+  end
+end
+
+class Middle < Top
+end
+
+class Bottom < Middle
+end
+
+top = Top.new("Hi!")
+middle = Middle.new("Bye!")
+bottom = Bottom.new("Hello?")
+puts top.get_x
+puts middle.get_x
+puts bottom.get_x
+
+=>
+Hello?
+Hello?
+Hello?</pre>
+
+
+
+
+<p>Uh oh! If you didn&#8217;t know how class variables worked you might have expected three different outputs, but each time we created a class, we redefined <span class="code">@@x</span>. So <span class="code">puts</span>ing each of our objects gave us the last initialization <span class="code">&#8220;Hello?&#8221;</span>.</p>
+
+
+
+
+<p>There you have it, four different types of ruby variables to play with! Now get busy and go practice already!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use a Ruby Class to Model a Book!]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/"/>
+    <updated>2014-10-19T12:33:18-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book</id>
+    <content type="html"><![CDATA[<p>This week at <a href="http://devbootcamp.com">DBC</a> we learned how to create our own ruby classes. There&#8217;s all kinds of classes already built into ruby, such as <span class="code">Integer</span>, <span class="code">Array</span>, and even <span class="code">Object</span>. Everything in ruby is an object and all objects are <span class="italic">instances</span> of a class. And just like how you can create your own objects, you can create your own classes too! In today&#8217;s entry, I will be showing you how to create a class to model a book!</p>
+
+
+<!-- more -->
+
+
+<p>There&#8217;s a lot we could put into our <span class="code">Book</span> class, but let&#8217;s just say that you want to model the total number of pages in your book, what page you are on, the ability to turn pages, and the ability to go to a specific page. The following code can be used to create our class with these functions:</p>
+
+
+
+
+<pre class="code-window">
+ 1     class Book
+ 2       def initialize(total_pages)
+ 3         raise ArgumentError.new("Please enter an Integer") if not total_pages.is_a? Integer
+ 4         @total_pages = total_pages
+ 5         @page = 1
+ 6       end
+ 7
+ 8       def page
+ 9         @page
+10       end
+11
+12       def page=(page)
+13         @page = page
+14       end
+15
+16       def turn_page
+17         @page += 1
+18       end
+19     end
+    </pre>
+
+
+
+
+<p>Now let&#8217;s go over what this all means. First, we create the class simply with <span class="code">class Book</span>. When you make a class, you then define methods that are specific to those class objects. These are called, <span class="italic">class instance methods</span>. In other words, these methods are <span class="italic">instances</span> of the class and only objects that are instances of that class can use them. We create our first instance method on line 2. The method <span class="code">initialize</span> is a special instance method that runs when we create a new class object. We can create a new book called <span class="code">my_book</span> like so:</p>
+
+
+
+
+<pre class="code-window">my_book = Book.new(200)</pre>
+
+
+
+
+<p>Going back to our code, you can see that <span class="code">initialize</span> takes one argument <spane class="code">total_pages</spane>. When we created <span class="code">my_book</span> it takes <span class="code">200</span> as the argument for <span class="code">initialize</span>. Line 3 will raise an <span class="code">ArgumentError</span> if we enter anything other than an <span class="code">Integer</span> when we create the <span class="code">Book</span>. In line 4, we create the <span class="italic">instance variable</span> <span class="code">@total_pages</span> and set it equal to our argument <span class="code">total_pages</span>. Instance variables are extremely important when creating a class because they can be called outside of an instance method&#8217;s definition. Line 5 creates another instance variable <span class="code">@page</span> and gives it a value of <span class="code">1</span>. When we make a new <span class="code">Book</span> object, we are automatically on page 1!</p>
+
+
+
+
+<p>Our next instance method <span class="code">page</span> is created on line 8. This simply returns the value of the instance variable <span class="code">@page</span>. So if we wanted to see what page we were on in <span class="code">my_book</span> we could do it like this:</p>
+
+
+
+
+<pre class="code-window">
+my_book.page
+=> 1 </pre>
+
+
+
+
+<p><span class="code">#page</span> is called a <span class="italic">reader method</span> because it reads the value of an instance variable. We can also make <span class="italic">writer methods</span> that will change the value of an instance variable. This is exactly what we do on line 12! We can change to any page number we want like so:</p>
+
+
+
+
+<pre class="code-window">my_book.page = 45
+=> @page = 45</pre>
+
+
+
+
+<p>You notice how we added spaces to the <span class="code">=</span> and we didn&#8217;t need the parentheses? This is some <span class="italic">syntax sugar</span> that ruby lets us do! Lastly, on line 16 we define our instance method to turn pages. As you can see, this method will add <span class="code">1</span> to <span class="code">@page</span>. As you probably guessed you call it like this:</p>
+
+
+
+
+<pre class="code-window">my_book.turn_page
+=> @page = 46</pre>
+
+
+
+
+<p>There you have it! Our very own ruby class just for books! Obviously, there&#8217;s a lot more we could add to this class definition. What if you want to turn pages the other way? What if we turn to a page that is greater than our total pages? What&#8217;s the name of the book? If you want some practice, try to go and add these on your own! But before I let you go there&#8217;s one last thing I want to tell you about. Remember those reader and writer methods? They are super common when making classes. In fact, they are so common that there is a shorthand way of creating them. We use <span class="italic">attribute methods</span> to do this! Our code can be refactored to the following with the <span class="code">attr_accessor</span> method:</p>
+
+
+
+
+<pre class="code-window">
+ 1     class Book
+ 2       attr_accessor :page
+ 3
+ 4       def initialize(total_pages)
+ 5         raise ArgumentError.new("Please enter an Integer") if not total_pages.is_a? Integer
+ 6         @total_pages = total_pages
+ 7         @page = 1
+ 8       end
+ 9
+10       def turn_page
+11         @page += 1
+12       end
+13     end
+</pre>
+
+
+
+
+<p>If we had just wanted to make a reader method we could have used <span class="code">attr_reader</span> and if we wanted to just make a writer method we could have used <span class="code">attr_writer</span>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby Enumerable Method: #cycle]]></title>
@@ -57,51 +455,6 @@
 
 
 <p>So there you have it! My quick little guide to how to use the enumerable method <span class="code">#cycle</span>. Get out there and try it for yourself!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using Arrays and Hashes in Ruby]]></title>
-    <link href="http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby/"/>
-    <updated>2014-10-05T14:06:11-07:00</updated>
-    <id>http://rjmccluskey.github.io/blog/2014/10/05/using-arrays-and-hashes-in-ruby</id>
-    <content type="html"><![CDATA[<p>Time for another coding lesson. So what&#8217;s on the table for this week? Why, it&#8217;s our good fiends <span class="italic">arrays</span> and <span class="italic">hashes</span>.</p>
-
-
-<!-- more -->
-
-
-<p>So what are they? Well, to put it simply, they are fancy variables that we can use to store lists of data. A normal, boring variable stores just one value. But with arrays and hashes we can store an endless amount! We can even use them to store other arrays and hashes! So why do we have two types and what are the differences between the two?</p>
-
-
-
-
-<p>To give you an answer to that last question, let me first explain what arrays are. As you already know an array is a list of data. In ruby, you create an array with square brackets `[&#8230;]` and separate the values with commas. So for example if you wanted an array named <span class="italic">array</span> (I know, very creative right?!) containing three strings, &#8220;one&#8221; &#8220;two&#8221; and &#8220;three&#8221; you&#8217;d do so like this:</p>
-
-
-<pre><code class="Ruby">array = ["one","two","three"]
-</code></pre>
-
-<p>But there&#8217;s something important to know about arrays. Each value in an array is assigned a number. This is important for when you want to call one of those values. But instead of starting with the number 1, the first value inside an array is assigned the number 0. So remember that super sweet array we just created? Well, the first value, &#8220;one&#8221;, is assigned as 0, &#8220;two&#8221; is assigned as 1, and &#8220;three&#8221; is assigned as 2. So if you wanted to print the &#8220;first&#8221; value from your array to the screen, you&#8217;d do so like this:</p>
-
-
-<pre><code class="Ruby">puts array[0]
-</code></pre>
-
-<p>Arrays are great when you want order to your list. The order can be manipulated in all sorts of ways! A simple example would be a list of names that you want to then alphabetize. But what if you don&#8217;t care so much about the order and you want to describe the values with something different than numbers? This is exactly where hashes come into play! With hashes, you can assign values with whatever you want. Hashes are lists of &#8220;key:value pairs&#8221;. Keys must be unique but values can be repeated. So let&#8217;s say you wanted to create a hash of people&#8217;s names and their eye color. You could do it like this:</p>
-
-
-<pre><code class="Ruby">eye_color = { Richard: "blue", Natalie: "green", Bob: "green" }
-</code></pre>
-
-<p>As you can see, instead of the square brackets hashes use curly braces `{&#8230;}`. If you want to print Bob&#8217;s eye color, you could do so like this: </p>
-
-
-<pre><code class="Ruby">puts eye_color[:Bob]
-</code></pre>
-
-<p>Calling a value from a hash uses square brackets just like an array, and make sure to put the colon ( : ) in front of the key. The order of hashes are a bit more arbitrary, but they are better than arrays to use in certain situations.</p>
 
 ]]></content>
   </entry>

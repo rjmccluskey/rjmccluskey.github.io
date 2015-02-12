@@ -4,7 +4,7 @@
   <title><![CDATA[Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-12T11:30:07-08:00</updated>
+  <updated>2015-02-12T12:21:11-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -12,6 +12,572 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Do You Have a Question?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/16/do-you-have-a-question/"/>
+    <updated>2014-11-16T12:17:30-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/16/do-you-have-a-question</id>
+    <content type="html"><![CDATA[<p>Tomorrow is the big day. I start Phase 1 of <a href="http://devbootcamp.com">DBC</a> which means that the learning switches from remote to in-person and the real work begins. I&#8217;m so excited, a little nervous, really happy, but also kinda sad that I&#8217;ll be away from some of the people I love for a little while. Anyways, DBC is awesome because our education here is by no means traditional. In fact, a lot of it is up to us students asking for the right things. If we need help on something we need to ask for it because we&#8217;re gonna be moving fast! It&#8217;s really important that to get good answers, you need to ask good questions. So let&#8217;s talk about how to ask good technical questions.</p>
+
+
+<!-- more -->
+
+
+<p>So what makes a good question? Wait&#8230; was that good question? Just messing ;) I think the very first thing you need in order to ask a good question is to do as much research on your own within a reasonable time frame. If you&#8217;re chasing down random links on Google and not finding anything helpful then you&#8217;re pretty safe to start asking questions. This first step is important because it helps you to fully understand exactly what it is that you&#8217;re having trouble with.</p>
+
+
+
+
+<p>Now that you know exactly what the problem is, you need to present it in a short and specific way. When posting a question online, this would involve the title of your post. Obviously since it is a title, it will be short but that doesn&#8217;t mean you should be too general. Imagine that you are trying to ask your question to your really busy boss. Be short and straight to the point with the title. If you&#8217;re asking a question in person, you don&#8217;t exactly have a title (unless you write it on a sticky note and put it on your head). So you can skip this part.</p>
+
+
+
+
+<p>Next, you&#8217;ll want to explain the background of your problem. Introduce your problem by explaining how you got to it. What were you trying to do what what tools where you using? Explain the scope of the problem so that whoever is helping you knows exactly what was going on. After that you&#8217;ll want to post some actual lines of code so that the person helping you can recreate the problem is need be. Remember that any error messages may also be helpful.</p>
+
+
+
+
+<p>Sometimes when we are asking programming questions we want to jump straight to the error because that&#8217;s what we are focused on. But it is important to present the full scope of the problem because the person we are asking the question to, or any readers online, doesn&#8217;t know exactly what you were doing before you got there.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Do You Take the Punches?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/07/how-to-do-you-take-the-punches/"/>
+    <updated>2014-11-07T12:08:36-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/07/how-to-do-you-take-the-punches</id>
+    <content type="html"><![CDATA[<p>According to Dr. L. Nathanson, if people do not process shame in a healthy way, they will generally respond to it in one of four defensive directions which he has organized in the <a href="http://southdown.on.ca/publications/articles/Compass-of-Shame.pdf">&#8220;Compass of Shame&#8221;</a>. As shown in the picture below, these four directions are <span class="italic">withdrawal</span>, <span class="italic">attack self</span>, <span class="italic">avoidance</span>, and <span class="italic">attack other</span>. This week, <a href="http://devbootcamp.com">DBC</a> has asked us to examine our lives and ask ourselves how we respond to conflict and shame.</p>
+
+
+<!-- more -->
+
+
+<p><img src="http://3.bp.blogspot.com/-2ylImw4G2g4/Tfs_FpPbAxI/AAAAAAAAAQI/K1vDnBYkShw/s1600/shameu.jpg" class="img-body"></p>
+
+<p>I think that most people have used all four of these defense mechanisms at some point but generally we go to one more often. In the past, I&#8217;ve definitely reacted to shame in the direction of attacking myself. There&#8217;s lots of examples I could give, but to be honest, it&#8217;s a little too personal for me to just spill out for anyone on the Internet to see. Today, I can say that I&#8217;ve gotten a lot better at not doing this and instead learning from any emotional conflict I encounter, but this skill was something that I had to work at. And in a weird way, I think my tenancy to &#8220;attack myself&#8221; actually helped me to improve my ability to process shame. Why do I think this? Well, the way I would attack myself was by blaming myself for the conflict and putting myself down. This is definitely not healthy but it led to a lot of self examination. Of course, examining yourself with the wrong attitude can be very damaging, but luckily I managed to eventually turn it positive.</p>
+
+
+
+
+<p>I used to wonder all the time, what could I have done differently that would have prevented the conflict. Sometimes this would make me blame myself wrongfully, which led to putting myself down. I&#8217;d hold onto the shame, and that sucked. But looking inside myself sparked other discoveries that I think helped me to let go of the shame and look at the experience as a chance to learn and improve myself. Instead of putting myself down, I began to grow stronger.</p>
+
+
+
+
+<p>I&#8217;m not perfect, but I think I&#8217;ve become pretty good at spotting when my mind wants to go down it&#8217;s old path of attacking myself. Being aware of my emotional reactions gives me the ability to see it with a clearer mind and process my emotions more healthily.</p>
+
+
+
+
+<p>So what does this have to do with learning to code? In any field you are going to be working with other people. And when people get together, there tends to be conflict at some point. So I think DBC is trying to help us improve ourselves more than just technically so that we are just better human beings. And as better human beings, we can be better developers!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[So What About Rails?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/05/so-what-about-rails/"/>
+    <updated>2014-11-05T12:10:35-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/05/so-what-about-rails</id>
+    <content type="html"><![CDATA[<p>So up to this point of Phase 0 at <a href="http://devbootcamp.com">DBC</a> I&#8217;ve learned a ton of stuff. I&#8217;m now familiar with git and GitHub, HTML, CSS, Ruby, JavaScript, and even a little bit of SQL. Before I started DBC, I had heard of all these languages except that I never heard or read about Ruby by itself. It was always mentioned as &#8220;Ruby on Rails&#8221;. We won&#8217;t be getting into Rails until the immersive phases but I still want to know more about it since it seems to be so closely tied with Ruby. So let&#8217;s learn about Rails!</p>
+
+
+<!-- more -->
+
+
+<p>Stated simply, Ruby on Rails, or just Rails, is an open source web framework written in Ruby. Lots of different companies use RoR including Twitter and Github. Sounds good, except what exactly is a framework? To conceptually understand a framework let&#8217;s look at the frame of a building.</p>
+
+
+<p><img class="img-body" src="http://www.vermontframes.com/images/page-design-process.jpg"></p>
+
+<p>The framework of this house is not visually appealing and wouldn&#8217;t provide very good shelter by itself, but it is necessary for the structural integrity of the house and all other parts on the house require it before they can be added. It wouldn&#8217;t make very much sense to build just one wall with all the doors, windows, paint, and fixtures before having the frame built. I suppose you could build a house this way but it would take much longer and would be much more difficult.</p>
+
+
+
+
+<p>Just like the wooden frame is used to build a house, a web framework, such as Rails, is used to build web applications. Rails combines Ruby with HTML, CSS, and Javascript and by doing so creates the structure of our web app. Without a framework, we would have to make all these connections ourselves and there would be lots of repetition. Our code would take longer to make, be more prone to bugs, and be harder to implement new things later on.</p>
+
+
+
+
+<p>This is a pretty basic introduction to Rails, but hopefully you at least now know the difference between Ruby and Rails and how they work together. If you are interested to know more, I found a much more in depth article on the subject <a href="http://railsapps.github.io/what-is-ruby-rails.html">here</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What Do You Value?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/02/what-do-you-value/"/>
+    <updated>2014-11-02T12:03:44-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/02/what-do-you-value</id>
+    <content type="html"><![CDATA[<p>Values. It&#8217;s a word you hear a lot. When we elect government officials we ask &#8220;what are their values?&#8221; Your grandma probably has certain values that she hopes you&#8217;ll keep in your family. And most importantly, did you assign all the right values to your variables?! Okay, just kidding on that last one! But seriously, what do you value most when you are happiest? Personally, I value <span class="italic">ambition</span>.</p>
+
+
+<!-- more -->
+
+
+<p>I thought about times when I&#8217;ve been the happiest and most satisfied. Contrary to that, I thought about times when I&#8217;ve been the least satisfied with my life. And I could quickly narrow down the difference in regards to ambition. Right now I can say that I am very happy. I&#8217;ve chosen to change my career and I love what I&#8217;m doing now. A lot of that has to do with me feeling ambitious. I&#8217;m driven to code every single day and learn as much as I can every single day. And it&#8217;s fun! I seriously wake up every morning and get excited to open my laptop and start coding. This ambition has given me a whole new perspective on life and has even improved other aspects. However, before I made the change, I wasn&#8217;t nearly as satisfied. I woke up and went to work because I felt that I <span class="italic">had</span> to. I&#8217;m not saying it was all bad, but I didn&#8217;t feel ambitious like I do now.</p>
+
+
+
+
+<p>Last week I talked about <a href="http://rjmccluskey.github.io/blog/c6-stereotype-threat.html">stereotype threat</a> and how it can get in the way of achieving at your highest level. To recap, it&#8217;s the impostor in your head telling you that you aren&#8217;t good enough for this and that. I think that holding ambition as an important value can help fight against stereotype threat. If you are ambitious, you might take on a lot and you might fail at times, but you will also see yourself succeed in ways others (or even yourself) do not think is possible and that success will prove the impostor wrong. Having a track record of these successes born out of your ambition can be a great thing to fall back on when times get tough.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Iterations - Ruby vs JavaScript]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/02/iterations-ruby-vs-javascript/"/>
+    <updated>2014-11-02T12:01:25-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/02/iterations-ruby-vs-javascript</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve started learning JavaScript this week and I have mixed feelings about it. At first it was just a pain in the ass. I&#8217;ve gotten pretty used to the wonders of ruby and how simple it can be. JavaScript on the other hand, can be pretty tough for a beginner. But as I got going I started to really like it because it is really fun to manipulate HTML elements. Anyways, to show you a little comparison between ruby and JS let&#8217;s take a look at how we can iterate through an array in both languages.</p>
+
+
+<!-- more -->
+
+
+<h3>Ruby</h3>
+
+
+
+
+<p>If you are using ruby and you have an array object, you can do something to each of the values in that array using the <span class="code">each</span> method. If that&#8217;s not straightforward I don&#8217;t know what is! Let me show you how it works with an example:</p>
+
+
+
+
+<pre class="code-window">
+# Ruby
+
+array = [1,2,3,4,5]
+array.each { |value| puts value }
+
+# 1
+# 2
+# 3
+# 4
+# 5</pre>
+
+
+
+
+<p>This built in method knows how to cycle though the array automatically. Once you get used to the syntax there really isn&#8217;t much to think about. Of course this is a simple example and it can get much more complicated but you get the idea.</p>
+
+
+
+
+<h3>JavaScript</h3>
+
+
+
+
+<p>Unfortunately, there is nothing built into JS to iterate as easy as we can in ruby. So far, the best way I&#8217;ve found to iterate as we did with the example above is by using a <span class="code">for</span> loop. Let&#8217;s do the exact same iteration in JS:</p>
+
+
+
+
+<pre class="code-window">
+// JavaScript
+
+var array = [1,2,3,4,5];
+for (var count = 0; count < array.length; count++) {
+  console.log(array[count]);
+}
+
+// 1
+// 2
+// 3
+// 4
+// 5</pre>
+
+
+
+
+<p>A quick comparison shows that there&#8217;s definitely a little more to think about when iterating in JS. Making our array is pretty similar except we use the keyword <span class="code">var</span> and we need a semi-colon at the end of the statement. Our <span class="code">for</span> loop takes three expressions. The first creates a new local variable <span class="code">count</span> and assigns an initial value of 0 to it. The second expression is used so that the loop knows when to stop. And the third expression adds 1 to <span class="code">count</span> after each loop. I think it&#8217;s pretty obvious that ruby wins when it comes to ease of iterating.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Stereotypes Are Bad, Mmkay]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/26/stereotypes-are-bad-mmkay/"/>
+    <updated>2014-10-26T12:38:20-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/26/stereotypes-are-bad-mmkay</id>
+    <content type="html"><![CDATA[<p>Ever heard of <span class="italic">stereotype threat</span>? I hadn&#8217;t before this week but <a href="http://devbootcamp.com">DBC</a> had us research it. It&#8217;s a really interesting topic and I think everyone can benefit from understanding it. So what exactly is it? This <a href="http://www.reducingstereotypethreat.org/definition.html">article</a> explains it well:</p>
+
+
+<!-- more -->
+
+
+<blockquote class="quote">Stereotype threat refers to being at risk of confirming, as self-characteristic, a negative stereotype about one&#8217;s group (<a href="http://www.reducingstereotypethreat.org/bibliography_steele_aronson.html">Steele & Aronson, 1995</a>). This term was first used by <a href="http://www.reducingstereotypethreat.org/bibliography_steele_aronson.html">Steele and Aronson (1995)</a> who showed in several experiments that Black college freshmen and sophomores performed more poorly on standardized tests than White students when their race was emphasized. When race was not emphasized, however, Black students performed better and equivalently with White students. The results showed that performance in academic contexts can be harmed by the awareness that one&#8217;s behavior might be viewed through the lens of racial stereotypes.</blockquote>
+
+
+
+
+<p>While this research was done primarily in terms of race, stereotype threat can come in many forms. I noticed a long time before I signed up for DBC that I was interested in coding. I wished I knew it earlier so that I would have chosen to pursue a CS degree when applying to college. So for a while, I didn&#8217;t believe I could switch careers and become a developer. I had already obtained a different degree and was heading on a different path. I know that this might not exactly have been a stereotype holding me back but it&#8217;s the best way I can identify with the subject and I think it&#8217;s something that a lot of us going to DBC have felt before.</p>
+
+
+
+
+<p>Stereotype threat is really that little naysayer inside our brain telling us that we can&#8217;t do something because of x, y, and z. But that evil little voice is wrong! I know without a doubt, a lot if not all of us students will have moments of doubting ourselves while at DBC. And I think the best way to combat this is to pay attention to others and their attitude. If someone seems down on themselves we should reassure them that they are capable! And when we get down on ourselves we should remind ourselves how far we&#8217;ve come and seek help from others. The whole point of DBC is to foster a community to learn with and from. So it will be with this community that we will fight stereotype threat.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Varying Variables of Ruby]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/"/>
+    <updated>2014-10-25T13:05:51-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby</id>
+    <content type="html"><![CDATA[<p>If you&#8217;re at least a little familiar with ruby, or any programming language, you probably have an idea of what a variable is. Put <span class="italic">really</span> simply, it&#8217;s the thing you assign values to. Values can be blocks of code but ultimately they are a string, number, boolean, or groups of any combination of these stored in an array or hash. Why use variables? Well there&#8217;s many reasons but mainly it&#8217;s so you don&#8217;t have to write pieces of code over and over and over again. In today&#8217;s entry we&#8217;ll be going over the four main types of ruby variables and when to use them!</p>
+
+
+<!-- more -->
+
+
+<h3>#1 Local Variables</h3>
+
+
+
+
+<p>The most common type you will see is the <span class="italic">local variable</span>. Local variable names start with a lowercase letter or underscore and can include any combination of letters, numbers and underscores. <span class="code">my_variable</span>, <span class="code">h_84hdfa_574</span>, <span class="code">_stuff</span> and <span class="code">x</span> are all examples of local variables. Assigning a value to a local variable looks like this:</p>
+
+
+
+
+<pre class="code-window">example_variable = "Hello, world!"</pre>
+
+
+
+
+<p>From the above example, our local variable is <span class="code">example_variable</span> to which we assign the string <span class="code">&#8220;Hello, world!&#8221;</span>. Local variables are only accessible within their scope. Understanding scope deserves it&#8217;s own post, but for now you can think of it as a layer. When you start with a blank slate you are in the outermost layer, and adding things like classes, methods, or modules creates inner layers. A local variable defined in the <span class="italic">outer layer</span> can&#8217;t be used by any of the inner layers. And a local variable defined inside a method can only be used in the method definition. Take a look at the following example to get a better idea of what I mean:</p>
+
+
+
+
+<pre class="code-window">
+var1 = "apple"
+
+def make_apple_a_banana
+  var1 = "banana"
+end
+
+make_apple_a_banana
+puts var1</pre>
+
+
+
+
+<p>Since we use the same variable name <span class="code">var1</span> you might expect our method <span class="code">make_apple_a_banana</span> to change the assignment of <span class="code">var1</span>. But as we just learned, even though these variables have the same name, they don&#8217;t have the same scope. Therefore, running this code produces:</p>
+
+
+
+
+<pre class="code-window">apple</pre>
+
+
+
+
+<h3>#2 Global Variables</h3>
+
+
+
+
+<p>Unlike local variables, <span class="italic">global variables</span> can be accessed by anything, anywhere in your program. You can recognize a global variable because it starts with a dollar sign <span class="code">$</span>. Ruby has built-in global variables and you can create your own. However, a lot of programmers will tell you that making global variables is rarely a good idea because they can contradict the object orientated nature of ruby. But for the sake of learning let&#8217;s take a look at an example:</p>
+
+
+
+
+<pre class="code-window">
+$global_var = "Hello"
+
+def world_greeting
+  puts $global_var + " world!"
+end
+
+world_greeting
+
+=>
+Hello World!</pre>
+
+
+
+
+<p>If we had instead used a local variable, running <span class="code">world_greeting</span> would have gave us an undefined variable or method error.</p>
+
+
+
+
+<h3>#3 Instance Variables</h3>
+
+
+
+
+<p><span class="ital">Instance variables</span> are variables that are accessible inside an object, but only that object. You&#8217;ll usually use them in classes. Instance variable names always start with an at sign <span class="code">@</span>. Let&#8217;s make a new class to show you an example:</p>
+
+
+
+
+<pre class="code-window">
+class Cup
+  def initialize
+    @full = false
+  end
+
+  def fill
+    @full = true
+  end
+
+  def is_full?
+    @full
+  end
+end
+
+sippy_cup = Cup.new
+sippy_cup.fill
+sippy_cup.is_full?
+
+=> true</pre>
+
+
+
+
+<p>As you can see, our instance variable <span class="code">@full</span> can be used and manipulated in different method definitions within the class <span class="code">Cup</span>. Had we called <span class="code">@full</span> outside of our class, we would get an undefined variable error.</p>
+
+
+
+
+<h3>#4 Class Variables</h3>
+
+
+
+
+<p><span class="italic">Class variables</span> are kinda like global variables (and I use that comparison loosely) however they are scoped to their class hierarchy. They are designated by starting with two at signs <span class="code">@@</span>. They store values that are shared between a class and instances of that class, but they&#8217;re not visible to any other objects. So they differ from global variables in that they are not mutable and visible everywhere. Let&#8217;s look at an example to see what I mean:</p>
+
+
+
+
+<pre class="code-window">
+class Top
+  def initialize(x)
+    @@x = x
+  end
+
+  def get_x
+    @@x
+  end
+end
+
+class Middle < Top
+end
+
+class Bottom < Middle
+end
+
+top = Top.new("Hi!")
+middle = Middle.new("Bye!")
+bottom = Bottom.new("Hello?")
+puts top.get_x
+puts middle.get_x
+puts bottom.get_x
+
+=>
+Hello?
+Hello?
+Hello?</pre>
+
+
+
+
+<p>Uh oh! If you didn&#8217;t know how class variables worked you might have expected three different outputs, but each time we created a class, we redefined <span class="code">@@x</span>. So <span class="code">puts</span>ing each of our objects gave us the last initialization <span class="code">&#8220;Hello?&#8221;</span>.</p>
+
+
+
+
+<p>There you have it, four different types of ruby variables to play with! Now get busy and go practice already!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gimme Some Feedback!]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/19/gimme-some-feedback/"/>
+    <updated>2014-10-19T12:35:59-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/19/gimme-some-feedback</id>
+    <content type="html"><![CDATA[<p>Any musician will tell you that feedback is the worst! Have you ever been to a concert and heard a loud, shrieking, buzzing sound build up out of no where?! Yeah, it&#8217;s pretty horrible. But all of us at <a href="http://devbootcamp.com">DBC</a> love feedback! That is, giving and receiving feedback on our interpersonal and programming skills. We are learning so much, so fast, so it&#8217;s important to have some kind of indication on how we are doing.</p>
+
+
+<!-- more -->
+
+
+<p>So far, the main way us students are getting feedback is through pairing. For the most part, I have really enjoyed paired programming. I am always surprised by how efficiently we are able to work though a problem that would have probably taken me much longer to do alone. There&#8217;s always opportunity to learn and to teach. And on top of all that, we get the chance to work with many different kinds of people which is a great way to practice communication skills. When you are navigating while pairing with someone, you don&#8217;t have your hands on the code. Because of this, you really need to communicate clearly to get your ideas across to the other person. For something as technical as programming, this ability is very important. I&#8217;ve found that keeping communication flowing as much as possible leads to the best pairing sessions.</p>
+
+
+
+
+<p>After we pair, we then give the other student feedback, anonymously. When I read my feedback for the first time, I was a little nervous. I wasn&#8217;t sure how I would react if someone had something super critical to say. Of course, nothing like this happened and most people had lots of very positive things to say. I did notice a slight jump of my stomach when someone pointed out areas that I needed to improve, but I quickly reminded myself that this will help me grow. My feedback has taught me to be more assertive with my ideas when I know a better solution than my pair.</p>
+
+
+
+
+<p>When I first gave feedback to another student, I remember feeling a little conflicted about it. I really didn&#8217;t want to come off the wrong way, but I also didn&#8217;t want leave something out for the sake of someone&#8217;s feelings. I found that it is important to point out strengths and weaknesses of your pair so that they know what they are doing right, and what what they need to improve on. I&#8217;ve also found that being honest is the best thing to do while giving feedback.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Use a Ruby Class to Model a Book!]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/"/>
+    <updated>2014-10-19T12:33:18-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book</id>
+    <content type="html"><![CDATA[<p>This week at <a href="http://devbootcamp.com">DBC</a> we learned how to create our own ruby classes. There&#8217;s all kinds of classes already built into ruby, such as <span class="code">Integer</span>, <span class="code">Array</span>, and even <span class="code">Object</span>. Everything in ruby is an object and all objects are <span class="italic">instances</span> of a class. And just like how you can create your own objects, you can create your own classes too! In today&#8217;s entry, I will be showing you how to create a class to model a book!</p>
+
+
+<!-- more -->
+
+
+<p>There&#8217;s a lot we could put into our <span class="code">Book</span> class, but let&#8217;s just say that you want to model the total number of pages in your book, what page you are on, the ability to turn pages, and the ability to go to a specific page. The following code can be used to create our class with these functions:</p>
+
+
+
+
+<pre class="code-window">
+ 1     class Book
+ 2       def initialize(total_pages)
+ 3         raise ArgumentError.new("Please enter an Integer") if not total_pages.is_a? Integer
+ 4         @total_pages = total_pages
+ 5         @page = 1
+ 6       end
+ 7
+ 8       def page
+ 9         @page
+10       end
+11
+12       def page=(page)
+13         @page = page
+14       end
+15
+16       def turn_page
+17         @page += 1
+18       end
+19     end
+    </pre>
+
+
+
+
+<p>Now let&#8217;s go over what this all means. First, we create the class simply with <span class="code">class Book</span>. When you make a class, you then define methods that are specific to those class objects. These are called, <span class="italic">class instance methods</span>. In other words, these methods are <span class="italic">instances</span> of the class and only objects that are instances of that class can use them. We create our first instance method on line 2. The method <span class="code">initialize</span> is a special instance method that runs when we create a new class object. We can create a new book called <span class="code">my_book</span> like so:</p>
+
+
+
+
+<pre class="code-window">my_book = Book.new(200)</pre>
+
+
+
+
+<p>Going back to our code, you can see that <span class="code">initialize</span> takes one argument <spane class="code">total_pages</spane>. When we created <span class="code">my_book</span> it takes <span class="code">200</span> as the argument for <span class="code">initialize</span>. Line 3 will raise an <span class="code">ArgumentError</span> if we enter anything other than an <span class="code">Integer</span> when we create the <span class="code">Book</span>. In line 4, we create the <span class="italic">instance variable</span> <span class="code">@total_pages</span> and set it equal to our argument <span class="code">total_pages</span>. Instance variables are extremely important when creating a class because they can be called outside of an instance method&#8217;s definition. Line 5 creates another instance variable <span class="code">@page</span> and gives it a value of <span class="code">1</span>. When we make a new <span class="code">Book</span> object, we are automatically on page 1!</p>
+
+
+
+
+<p>Our next instance method <span class="code">page</span> is created on line 8. This simply returns the value of the instance variable <span class="code">@page</span>. So if we wanted to see what page we were on in <span class="code">my_book</span> we could do it like this:</p>
+
+
+
+
+<pre class="code-window">
+my_book.page
+=> 1 </pre>
+
+
+
+
+<p><span class="code">#page</span> is called a <span class="italic">reader method</span> because it reads the value of an instance variable. We can also make <span class="italic">writer methods</span> that will change the value of an instance variable. This is exactly what we do on line 12! We can change to any page number we want like so:</p>
+
+
+
+
+<pre class="code-window">my_book.page = 45
+=> @page = 45</pre>
+
+
+
+
+<p>You notice how we added spaces to the <span class="code">=</span> and we didn&#8217;t need the parentheses? This is some <span class="italic">syntax sugar</span> that ruby lets us do! Lastly, on line 16 we define our instance method to turn pages. As you can see, this method will add <span class="code">1</span> to <span class="code">@page</span>. As you probably guessed you call it like this:</p>
+
+
+
+
+<pre class="code-window">my_book.turn_page
+=> @page = 46</pre>
+
+
+
+
+<p>There you have it! Our very own ruby class just for books! Obviously, there&#8217;s a lot more we could add to this class definition. What if you want to turn pages the other way? What if we turn to a page that is greater than our total pages? What&#8217;s the name of the book? If you want some practice, try to go and add these on your own! But before I let you go there&#8217;s one last thing I want to tell you about. Remember those reader and writer methods? They are super common when making classes. In fact, they are so common that there is a shorthand way of creating them. We use <span class="italic">attribute methods</span> to do this! Our code can be refactored to the following with the <span class="code">attr_accessor</span> method:</p>
+
+
+
+
+<pre class="code-window">
+ 1     class Book
+ 2       attr_accessor :page
+ 3
+ 4       def initialize(total_pages)
+ 5         raise ArgumentError.new("Please enter an Integer") if not total_pages.is_a? Integer
+ 6         @total_pages = total_pages
+ 7         @page = 1
+ 8       end
+ 9
+10       def turn_page
+11         @page += 1
+12       end
+13     end
+</pre>
+
+
+
+
+<p>If we had just wanted to make a reader method we could have used <span class="code">attr_reader</span> and if we wanted to just make a writer method we could have used <span class="code">attr_writer</span>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Don't Feed the Patent Trolls!]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/12/dont-feed-the-patent-trolls/"/>
+    <updated>2014-10-12T12:31:20-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/12/dont-feed-the-patent-trolls</id>
+    <content type="html"><![CDATA[<p><a href="http://devbootcamp.com/">DBC</a> had us research some issues facing the tech industry today. Considering the massive size of this industry, it probably doesn&#8217;t come to much of a surprise that there&#8217;s plenty of issues out there. One that caught my eye (maybe because of the funny name) has to do with something called <span class="italic">patent trolls</span>.</p>
+
+
+<!-- more -->
+
+
+<p>So what exactly is a paten troll? If found this <a href="https://www.eff.org/issues/resources-patent-troll-victims">article</a> from the Electronic Frontier Foundation that explains it very well. In it they say:</p>
+
+
+
+
+<blockquote class="quote">&#8220;A patent troll uses patents as legal weapons, instead of actually creating any new products or coming up with new ideas. Instead, trolls are in the business of litigation (or even just threatening litigation). They often buy up patents cheaply from companies down on their luck who are looking to monetize what resources they have left, such as patents. Unfortunately, the Patent Office has a habit of issuing patents for ideas that are neither new nor revolutionary, and these patents can be very broad, covering everyday or commonsense types of computing – things that should never have been patented in the first place. Armed with these overbroad and vague patents, the troll will then send out threatening letters to those they argue infringe their patent(s).  These letters threaten legal action unless the alleged infringer agrees to pay a licensing fee, which can often range to the tens of thousands or even hundreds of thousands of dollars.&#8221;</blockquote>
+
+
+
+
+<p>Now I named this entry <span class="italic">Don&#8217;t Feed the Patent Trolls</span> in comparison to trolls that lurk on the Internet and say things to get a rise out of people. If you recognize that someone is being a troll you should just ignore them because the reaction is what they are looking for. While I made this connection for humor, this same strategy will not work on patent trolls. But how could we stop this type of patent abuse?</p>
+
+
+
+
+<p>Honestly, I don&#8217;t have enough knowledge on the subject to really answer that, but I&#8217;ll throw out some ideas that I saw while I was researching the subject. Right now, patent legislation is being revised in hopes to curb this abuse. But the problem might not be just localized to patents. In the United States, each party involved in a lawsuit is responsible for their own legal fees. In other places, such as in Europe, the loser of the lawsuit pays all the legal fees. Now I&#8217;m not really saying we should try to adopt a system like that in the U.S. but it is interesting that there is less of a problem with patent trolls in Europe because of this difference. It&#8217;s much riskier for the patent troll to sue when there is a possibility that they will have to pay those extra fees. Perhaps another solution could be that the patent troll must have proof of production of the product in question to sue on the grounds of patent infringement. This might help fight against companies buying up patents with no desire to actually create something from such patent.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ruby Enumerable Method: #cycle]]></title>

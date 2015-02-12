@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>The Varying Variables of Ruby - Rich Code</title>
+  <meta name="author" content="Rich McCluskey">
+
+  
+  <meta name="description" content="If you're at least a little familiar with ruby, or any programming language, you probably have an idea of what a variable is. Put really simply, it's &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rich Code" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rich Code</a></h1>
+  
+    <h2>Rich McCluskey | Software Developer</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="rjmccluskey.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/resume.pdf">Résumé</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">The Varying Variables of Ruby</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-25T13:05:51-07:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>1:05 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>If you&#8217;re at least a little familiar with ruby, or any programming language, you probably have an idea of what a variable is. Put <span class="italic">really</span> simply, it&#8217;s the thing you assign values to. Values can be blocks of code but ultimately they are a string, number, boolean, or groups of any combination of these stored in an array or hash. Why use variables? Well there&#8217;s many reasons but mainly it&#8217;s so you don&#8217;t have to write pieces of code over and over and over again. In today&#8217;s entry we&#8217;ll be going over the four main types of ruby variables and when to use them!</p>
+
+
+<!-- more -->
+
+
+<h3>#1 Local Variables</h3>
+
+
+
+
+<p>The most common type you will see is the <span class="italic">local variable</span>. Local variable names start with a lowercase letter or underscore and can include any combination of letters, numbers and underscores. <span class="code">my_variable</span>, <span class="code">h_84hdfa_574</span>, <span class="code">_stuff</span> and <span class="code">x</span> are all examples of local variables. Assigning a value to a local variable looks like this:</p>
+
+
+
+
+<pre class="code-window">example_variable = "Hello, world!"</pre>
+
+
+
+
+<p>From the above example, our local variable is <span class="code">example_variable</span> to which we assign the string <span class="code">&#8220;Hello, world!&#8221;</span>. Local variables are only accessible within their scope. Understanding scope deserves it&#8217;s own post, but for now you can think of it as a layer. When you start with a blank slate you are in the outermost layer, and adding things like classes, methods, or modules creates inner layers. A local variable defined in the <span class="italic">outer layer</span> can&#8217;t be used by any of the inner layers. And a local variable defined inside a method can only be used in the method definition. Take a look at the following example to get a better idea of what I mean:</p>
+
+
+
+
+<pre class="code-window">
+var1 = "apple"
+
+def make_apple_a_banana
+  var1 = "banana"
+end
+
+make_apple_a_banana
+puts var1</pre>
+
+
+
+
+<p>Since we use the same variable name <span class="code">var1</span> you might expect our method <span class="code">make_apple_a_banana</span> to change the assignment of <span class="code">var1</span>. But as we just learned, even though these variables have the same name, they don&#8217;t have the same scope. Therefore, running this code produces:</p>
+
+
+
+
+<pre class="code-window">apple</pre>
+
+
+
+
+<h3>#2 Global Variables</h3>
+
+
+
+
+<p>Unlike local variables, <span class="italic">global variables</span> can be accessed by anything, anywhere in your program. You can recognize a global variable because it starts with a dollar sign <span class="code">$</span>. Ruby has built-in global variables and you can create your own. However, a lot of programmers will tell you that making global variables is rarely a good idea because they can contradict the object orientated nature of ruby. But for the sake of learning let&#8217;s take a look at an example:</p>
+
+
+
+
+<pre class="code-window">
+$global_var = "Hello"
+
+def world_greeting
+  puts $global_var + " world!"
+end
+
+world_greeting
+
+=>
+Hello World!</pre>
+
+
+
+
+<p>If we had instead used a local variable, running <span class="code">world_greeting</span> would have gave us an undefined variable or method error.</p>
+
+
+
+
+<h3>#3 Instance Variables</h3>
+
+
+
+
+<p><span class="ital">Instance variables</span> are variables that are accessible inside an object, but only that object. You&#8217;ll usually use them in classes. Instance variable names always start with an at sign <span class="code">@</span>. Let&#8217;s make a new class to show you an example:</p>
+
+
+
+
+<pre class="code-window">
+class Cup
+  def initialize
+    @full = false
+  end
+
+  def fill
+    @full = true
+  end
+
+  def is_full?
+    @full
+  end
+end
+
+sippy_cup = Cup.new
+sippy_cup.fill
+sippy_cup.is_full?
+
+=> true</pre>
+
+
+
+
+<p>As you can see, our instance variable <span class="code">@full</span> can be used and manipulated in different method definitions within the class <span class="code">Cup</span>. Had we called <span class="code">@full</span> outside of our class, we would get an undefined variable error.</p>
+
+
+
+
+<h3>#4 Class Variables</h3>
+
+
+
+
+<p><span class="italic">Class variables</span> are kinda like global variables (and I use that comparison loosely) however they are scoped to their class hierarchy. They are designated by starting with two at signs <span class="code">@@</span>. They store values that are shared between a class and instances of that class, but they&#8217;re not visible to any other objects. So they differ from global variables in that they are not mutable and visible everywhere. Let&#8217;s look at an example to see what I mean:</p>
+
+
+
+
+<pre class="code-window">
+class Top
+  def initialize(x)
+    @@x = x
+  end
+
+  def get_x
+    @@x
+  end
+end
+
+class Middle < Top
+end
+
+class Bottom < Middle
+end
+
+top = Top.new("Hi!")
+middle = Middle.new("Bye!")
+bottom = Bottom.new("Hello?")
+puts top.get_x
+puts middle.get_x
+puts bottom.get_x
+
+=>
+Hello?
+Hello?
+Hello?</pre>
+
+
+
+
+<p>Uh oh! If you didn&#8217;t know how class variables worked you might have expected three different outputs, but each time we created a class, we redefined <span class="code">@@x</span>. So <span class="code">puts</span>ing each of our objects gave us the last initialization <span class="code">&#8220;Hello?&#8221;</span>.</p>
+
+
+
+
+<p>There you have it, four different types of ruby variables to play with! Now get busy and go practice already!</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rich McCluskey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-25T13:05:51-07:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>1:05 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/" data-via="rjmccluskey" data-counturl="http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/19/gimme-some-feedback/" title="Previous Post: Gimme Some Feedback!">&laquo; Gimme Some Feedback!</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/10/26/stereotypes-are-bad-mmkay/" title="Next Post: Stereotypes are bad, mmkay">Stereotypes are bad, mmkay &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/16/do-you-have-a-question/">Do You Have a Question?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/07/how-to-do-you-take-the-punches/">How to Do You Take the Punches?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/05/so-what-about-rails/">So What About Rails?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/02/what-do-you-value/">What Do You Value?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/02/iterations-ruby-vs-javascript/">Iterations - Ruby vs JavaScript</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>See me on GitHub!</h1>
+  
+  <a href="https://github.com/rjmccluskey">@rjmccluskey</a> on GitHub
+  
+  <script type="text/javascript">
+    // $(document).ready(function(){
+    //     if (!window.jXHR){
+    //         var jxhr = document.createElement('script');
+    //         jxhr.type = 'text/javascript';
+    //         jxhr.src = '/javascripts/libs/jXHR.js';
+    //         var s = document.getElementsByTagName('script')[0];
+    //         s.parentNode.insertBefore(jxhr, s);
+    //     }
+
+    //     github.showRepos({
+    //         user: 'rjmccluskey',
+    //         count: 0,
+    //         skip_forks: true,
+    //         target: '#gh_repos'
+    //     });
+    // });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rich McCluskey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'richcode';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/';
+        var disqus_url = 'http://rjmccluskey.github.io/blog/2014/10/25/the-varying-variables-of-ruby/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

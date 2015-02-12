@@ -4,7 +4,7 @@
   <title><![CDATA[Category: General | Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-12T11:30:07-08:00</updated>
+  <updated>2015-02-12T12:21:11-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -14,88 +14,139 @@
 
   
   <entry>
-    <title type="html"><![CDATA[What Are You Thinking?]]></title>
-    <link href="http://rjmccluskey.github.io/blog/2014/10/05/what-are-you-thinking/"/>
-    <updated>2014-10-05T13:50:29-07:00</updated>
-    <id>http://rjmccluskey.github.io/blog/2014/10/05/what-are-you-thinking</id>
-    <content type="html"><![CDATA[<p>At Dev Bootcamp we are learning a ton of stuff. That&#8217;s obvious. But, as a DBC student, it makes me wonder how I will retain as much information as possible. The reality is we all have different thinking styles and we all learn in different ways so how can I make sure I am learning in the best environment? Well, a good place to start is to actually narrow down my thinking style. Luckily, DBC had us do this before we even started Phase 0!</p>
+    <title type="html"><![CDATA[Do You Have a Question?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/16/do-you-have-a-question/"/>
+    <updated>2014-11-16T12:17:30-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/16/do-you-have-a-question</id>
+    <content type="html"><![CDATA[<p>Tomorrow is the big day. I start Phase 1 of <a href="http://devbootcamp.com">DBC</a> which means that the learning switches from remote to in-person and the real work begins. I&#8217;m so excited, a little nervous, really happy, but also kinda sad that I&#8217;ll be away from some of the people I love for a little while. Anyways, DBC is awesome because our education here is by no means traditional. In fact, a lot of it is up to us students asking for the right things. If we need help on something we need to ask for it because we&#8217;re gonna be moving fast! It&#8217;s really important that to get good answers, you need to ask good questions. So let&#8217;s talk about how to ask good technical questions.</p>
 
 
 <!-- more -->
 
 
-<p>According to Anthony Gregorc, there are <a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">four main thinking styles</a>. These are concrete sequential, concrete random, abstract sequential, and abstract random. I don&#8217;t want to bore you with the details, but let&#8217;s quickly go over what each of those means. This <a href="http://www.thelearningweb.net/personalthink.html">thinking style test</a> sums it up best: <blockquote><span class="italic">&#8220;Concrete Sequential Thinkers tend to be based in reality. They process information in an ordered, sequential, linear way. Concrete Random Thinkers are experimenters. Abstract Random Thinkers organize information through reflection, and thrive in unstructured, people-oriented environments. Abstract Sequential Thinkers love the world of theory and abstract thought.&#8221;</span></blockquote></p>
+<p>So what makes a good question? Wait&#8230; was that good question? Just messing ;) I think the very first thing you need in order to ask a good question is to do as much research on your own within a reasonable time frame. If you&#8217;re chasing down random links on Google and not finding anything helpful then you&#8217;re pretty safe to start asking questions. This first step is important because it helps you to fully understand exactly what it is that you&#8217;re having trouble with.</p>
 
 
 
 
-<p>So I know you&#8217;re dying to know my thinking style, right?! Well after I took that test, it turns out that I am a tie between concrete random and abstract random. At first I thought this was a little weird and wondered if I had messed up the test somehow. But the more I thought about it, the more it made complete sense. I love to experiment and get my hands dirty. If I&#8217;m not actually typing in code and testing it, I will not learn. And that goes for using code incorrectly. I like to make errors because it teaches me more about how my computer actually interprets the code that I am giving it. But I also learn a lot from others and, even if sometimes I&#8217;d rather work alone, being in a team helps to motivate me.</p>
+<p>Now that you know exactly what the problem is, you need to present it in a short and specific way. When posting a question online, this would involve the title of your post. Obviously since it is a title, it will be short but that doesn&#8217;t mean you should be too general. Imagine that you are trying to ask your question to your really busy boss. Be short and straight to the point with the title. If you&#8217;re asking a question in person, you don&#8217;t exactly have a title (unless you write it on a sticky note and put it on your head). So you can skip this part.</p>
 
 
 
 
-<p>Now that I understand my style, I can be strategic and use it to my advantage. Making sure to do plenty of practice problems and seeking out others to pair with will probably be the best thing for me. Looking back on my experience with Phase 0 so far, I can see how I&#8217;ve already done this and how I&#8217;ve strayed away to my disadvantage. At first, I wasn&#8217;t so eager to pair program because I wanted to go through everything by myself first. This might have been due to my concrete random qualities. But I think I ended up spending a lot more time on topics that I could have understood quicker had I been pairing. These same concrete random qualities were making me chase down rabbit holes and without someone else there to pull me back, I went pretty dang far down some of these holes! However, this last week I have been pairing a lot more and I am really starting to see why DBC is all about it. Sometimes it&#8217;s a bit of a struggle for me to navigate because I want my hands on the keyboard, but explaining to another person my ideas without just spilling them into my computer has helped me to be more careful with my organization.</p>
+<p>Next, you&#8217;ll want to explain the background of your problem. Introduce your problem by explaining how you got to it. What were you trying to do what what tools where you using? Explain the scope of the problem so that whoever is helping you knows exactly what was going on. After that you&#8217;ll want to post some actual lines of code so that the person helping you can recreate the problem is need be. Remember that any error messages may also be helpful.</p>
 
 
 
 
-<p>While it&#8217;s obvious that we all have different natural thinking styles, I still think it is important to challenge yourself outside of this definition. For example, concrete sequential thinkers might say that they can&#8217;t work in groups because it&#8217;s just the way they think. But because we live with other people, having this mindset could be a detriment. DBC tells its students to explore the differences between <a href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/">growth and fixed mindsets</a>. I personally agree that we can all have a &#8220;growth mindset&#8221; and, for the most part, we are not limited to natural abilities or intelligence. It&#8217;s good to know your thinking style to create a good learning environment, but it doesn&#8217;t have to define everything you do.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Is Dev Bootcamp a Restaurant or a Kitchen?]]></title>
-    <link href="http://rjmccluskey.github.io/blog/2014/09/20/is-dev-bootcamp-a-restaurant-or-a-kitchen/"/>
-    <updated>2014-09-20T17:44:40-07:00</updated>
-    <id>http://rjmccluskey.github.io/blog/2014/09/20/is-dev-bootcamp-a-restaurant-or-a-kitchen</id>
-    <content type="html"><![CDATA[<p>I just watched a very interesting Fireside chat with the founder of Dev Bootcamp, Shereef Bishay. In the video he explains how DBC was created and the attitude the students and instructors should have for the best possible experience. In Shereef&#8217;s opinion, DBC is more of a kitchen than a restaurant. <!-- more --> In a restaurant, you look at a menu and decide what you like and if you are willing to pay for it. After deciding, you expect to sit back while the waiters and the chefs get you exactly what you ordered. Most traditional education systems work this way, but not DBC! Shereef goes on to explain that at DBC you are part of the kitchen. Your education is really up to how hungry you are to learn. Of course there is a curriculum and teachers but its up to you to seek out help and help others. In the kitchen, everyone gets their hands dirty and everyone contributes to what is happening. DBC isn&#8217;t just mindless lectures followed by tests. It has structure but there&#8217;s also room for creativity. Because of this, it seems that DBC is constantly evolving into a stronger and stronger monster that feeds on knowledge and curiosity!</p>
-
-
-
-
-<p>So what&#8217;s my impression on DBC so far? Freakin&#8217; awesome! I can&#8217;t imagine a better learning experience. Don&#8217;t get me wrong, I am pretty nervous about all the work. But I&#8217;m excited by the challenge. I definitely fell into the restaurant mindset in the past but I am going to make a conscious effort to &#8220;stay in the kitchen&#8221; while at DBC. I think it might be a bit hard at first, because I am a little introverted, but I know that many other boots will be in the same position as me and that is encouraging.</p>
+<p>Sometimes when we are asking programming questions we want to jump straight to the error because that&#8217;s what we are focused on. But it is important to present the full scope of the problem because the person we are asking the question to, or any readers online, doesn&#8217;t know exactly what you were doing before you got there.</p>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Dev Bootcamp Is More Than Just Learning to Code]]></title>
-    <link href="http://rjmccluskey.github.io/blog/2014/09/16/dev-bootcamp-is-more-than-just-learning-to-code/"/>
-    <updated>2014-09-16T22:46:38-07:00</updated>
-    <id>http://rjmccluskey.github.io/blog/2014/09/16/dev-bootcamp-is-more-than-just-learning-to-code</id>
-    <content type="html"><![CDATA[<p>I have officially started Phase 0 of <a href="http://devbootcamp.com">devbootcamp</a> and right away we are being challenged to research mindfulness, productivity, and time management. At first I was a little apprehensive to do this because I was really itching to get straight to writing code, but I continued on and actually discovered some really awesome stuff!</p>
+    <title type="html"><![CDATA[How to Do You Take the Punches?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/07/how-to-do-you-take-the-punches/"/>
+    <updated>2014-11-07T12:08:36-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/07/how-to-do-you-take-the-punches</id>
+    <content type="html"><![CDATA[<p>According to Dr. L. Nathanson, if people do not process shame in a healthy way, they will generally respond to it in one of four defensive directions which he has organized in the <a href="http://southdown.on.ca/publications/articles/Compass-of-Shame.pdf">&#8220;Compass of Shame&#8221;</a>. As shown in the picture below, these four directions are <span class="italic">withdrawal</span>, <span class="italic">attack self</span>, <span class="italic">avoidance</span>, and <span class="italic">attack other</span>. This week, <a href="http://devbootcamp.com">DBC</a> has asked us to examine our lives and ask ourselves how we respond to conflict and shame.</p>
+
 
 <!-- more -->
 
 
-<p>The next ~18 weeks are gonna be really intense. I knew they would be before I even applied to DBC, but now that I have started the curriculum I am beginning to truly understand what that means. I’m not gonna lie. It’s scary. But I’m so pumped at the same time! And I realize that we are spending time to learn things like mindfulness so that we not only keep our sanity, but also to develop ourselves as human beings. You might even say that DBC isn’t only about web development, but self development too.</p>
+<p><img src="http://3.bp.blogspot.com/-2ylImw4G2g4/Tfs_FpPbAxI/AAAAAAAAAQI/K1vDnBYkShw/s1600/shameu.jpg" class="img-body"></p>
 
-<p>So what am I gonna do during Phase 0 to keep myself on tract and reduce stress? First, I want to dabble with meditation and what better way to learn to meditate than to use a web app! <a href="https://www.headspace.com/">Headspace</a> is like a “gym membership for the mind” and offers quick exercises to get you meditating. Second, I’m gonna try to implement the <a href="http://pomodorotechnique.com/">Pomodoro Technique</a> into my studies. If you’ve never heard of this before, it basically involves working in 25 minute increments with time to reflect on your work. And thirdly, I want to give myself a little slack. This <a href="http://paidtoexist.com/counterintuitive-productivity/">article</a> on productivity says it best: “Relax your expectations of constant, never-ceasing production. Instead, focus your energies on how you want to feel and what you need to operate with greatness… The key is in learning to identify and honor your natural rhythms. Listen and lean into whatever you’re being pulled to.”</p>
+<p>I think that most people have used all four of these defense mechanisms at some point but generally we go to one more often. In the past, I&#8217;ve definitely reacted to shame in the direction of attacking myself. There&#8217;s lots of examples I could give, but to be honest, it&#8217;s a little too personal for me to just spill out for anyone on the Internet to see. Today, I can say that I&#8217;ve gotten a lot better at not doing this and instead learning from any emotional conflict I encounter, but this skill was something that I had to work at. And in a weird way, I think my tenancy to &#8220;attack myself&#8221; actually helped me to improve my ability to process shame. Why do I think this? Well, the way I would attack myself was by blaming myself for the conflict and putting myself down. This is definitely not healthy but it led to a lot of self examination. Of course, examining yourself with the wrong attitude can be very damaging, but luckily I managed to eventually turn it positive.</p>
 
-<p>Alright, I’m off to bed! Hopefully my next entry will have some actual code in it! ;)</p>
+
+
+
+<p>I used to wonder all the time, what could I have done differently that would have prevented the conflict. Sometimes this would make me blame myself wrongfully, which led to putting myself down. I&#8217;d hold onto the shame, and that sucked. But looking inside myself sparked other discoveries that I think helped me to let go of the shame and look at the experience as a chance to learn and improve myself. Instead of putting myself down, I began to grow stronger.</p>
+
+
+
+
+<p>I&#8217;m not perfect, but I think I&#8217;ve become pretty good at spotting when my mind wants to go down it&#8217;s old path of attacking myself. Being aware of my emotional reactions gives me the ability to see it with a clearer mind and process my emotions more healthily.</p>
+
+
+
+
+<p>So what does this have to do with learning to code? In any field you are going to be working with other people. And when people get together, there tends to be conflict at some point. So I think DBC is trying to help us improve ourselves more than just technically so that we are just better human beings. And as better human beings, we can be better developers!</p>
+
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Taking a Leap]]></title>
-    <link href="http://rjmccluskey.github.io/blog/2014/09/09/taking-a-leap/"/>
-    <updated>2014-09-09T21:00:00-07:00</updated>
-    <id>http://rjmccluskey.github.io/blog/2014/09/09/taking-a-leap</id>
-    <content type="html"><![CDATA[<p>Three years ago I graduated from Cal Poly with a degree in Civil Engineering. In case you didn’t already do the math, three years ago was 2011 and the economy was horrible. I didn’t know <em>anyone</em> in my major that had a job lined up. On top of all that, I wasn’t even sure if civil engineering was really what I wanted to do. Go figure, an 18 year old entering college straight from high school had trouble choosing a major…</p>
+    <title type="html"><![CDATA[What Do You Value?]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/11/02/what-do-you-value/"/>
+    <updated>2014-11-02T12:03:44-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/11/02/what-do-you-value</id>
+    <content type="html"><![CDATA[<p>Values. It&#8217;s a word you hear a lot. When we elect government officials we ask &#8220;what are their values?&#8221; Your grandma probably has certain values that she hopes you&#8217;ll keep in your family. And most importantly, did you assign all the right values to your variables?! Okay, just kidding on that last one! But seriously, what do you value most when you are happiest? Personally, I value <span class="italic">ambition</span>.</p>
+
 
 <!-- more -->
 
 
-<p>But I didn’t want to admit “defeat” and I pretended that I was destined to be a civil engineer. I pushed past my gut feelings, got certified as an Engineer in Training (EIT) and eventually found a job. And for some time things were pretty good!</p>
+<p>I thought about times when I&#8217;ve been the happiest and most satisfied. Contrary to that, I thought about times when I&#8217;ve been the least satisfied with my life. And I could quickly narrow down the difference in regards to ambition. Right now I can say that I am very happy. I&#8217;ve chosen to change my career and I love what I&#8217;m doing now. A lot of that has to do with me feeling ambitious. I&#8217;m driven to code every single day and learn as much as I can every single day. And it&#8217;s fun! I seriously wake up every morning and get excited to open my laptop and start coding. This ambition has given me a whole new perspective on life and has even improved other aspects. However, before I made the change, I wasn&#8217;t nearly as satisfied. I woke up and went to work because I felt that I <span class="italic">had</span> to. I&#8217;m not saying it was all bad, but I didn&#8217;t feel ambitious like I do now.</p>
 
-<p>After a while, however, I started feeling an itch. And it didn’t go away. I wanted something different; something more creative but still technical. I wanted to feel passionate about my work and I wanted to have fun. I am sure there are civil engineers out there that feel this way about their work, but that simply was not me. I finally admitted to myself that it was ok to change my mind.</p>
 
-<p>So, I began searching. I began noticing what made me feel excited. I purposely resisted falling into mediocracy. I started to learn some basic programming, and I really liked it! Pretty quickly I realized that writing code could be exactly what I was looking for in a career!  Learning on my own was going great but I knew that if I really wanted to take this leap and switch careers I would personally need more structure and mentorship. I had heard of “bootcamp” courses that taught programming languages in an incredibly short amount of time and as I researched this possibility I eventually found <a href="http://devbootcamp.com/">Dev Bootcamp</a>. I applied, and I got in!</p>
 
-<p>In less than a week I embark on “Phase 0” of this program and I couldn’t be more excited. As part of my journey I thought it would be useful to blog about my experience so that I have a reference to look back on. I’ve never done anything like this before, but I want this to be public so that hopefully I inspire someone else to find more passion in their career.</p>
 
-<p>So here it goes!</p>
+<p>Last week I talked about <a href="http://rjmccluskey.github.io/blog/c6-stereotype-threat.html">stereotype threat</a> and how it can get in the way of achieving at your highest level. To recap, it&#8217;s the impostor in your head telling you that you aren&#8217;t good enough for this and that. I think that holding ambition as an important value can help fight against stereotype threat. If you are ambitious, you might take on a lot and you might fail at times, but you will also see yourself succeed in ways others (or even yourself) do not think is possible and that success will prove the impostor wrong. Having a track record of these successes born out of your ambition can be a great thing to fall back on when times get tough.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Stereotypes Are Bad, Mmkay]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/26/stereotypes-are-bad-mmkay/"/>
+    <updated>2014-10-26T12:38:20-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/26/stereotypes-are-bad-mmkay</id>
+    <content type="html"><![CDATA[<p>Ever heard of <span class="italic">stereotype threat</span>? I hadn&#8217;t before this week but <a href="http://devbootcamp.com">DBC</a> had us research it. It&#8217;s a really interesting topic and I think everyone can benefit from understanding it. So what exactly is it? This <a href="http://www.reducingstereotypethreat.org/definition.html">article</a> explains it well:</p>
+
+
+<!-- more -->
+
+
+<blockquote class="quote">Stereotype threat refers to being at risk of confirming, as self-characteristic, a negative stereotype about one&#8217;s group (<a href="http://www.reducingstereotypethreat.org/bibliography_steele_aronson.html">Steele & Aronson, 1995</a>). This term was first used by <a href="http://www.reducingstereotypethreat.org/bibliography_steele_aronson.html">Steele and Aronson (1995)</a> who showed in several experiments that Black college freshmen and sophomores performed more poorly on standardized tests than White students when their race was emphasized. When race was not emphasized, however, Black students performed better and equivalently with White students. The results showed that performance in academic contexts can be harmed by the awareness that one&#8217;s behavior might be viewed through the lens of racial stereotypes.</blockquote>
+
+
+
+
+<p>While this research was done primarily in terms of race, stereotype threat can come in many forms. I noticed a long time before I signed up for DBC that I was interested in coding. I wished I knew it earlier so that I would have chosen to pursue a CS degree when applying to college. So for a while, I didn&#8217;t believe I could switch careers and become a developer. I had already obtained a different degree and was heading on a different path. I know that this might not exactly have been a stereotype holding me back but it&#8217;s the best way I can identify with the subject and I think it&#8217;s something that a lot of us going to DBC have felt before.</p>
+
+
+
+
+<p>Stereotype threat is really that little naysayer inside our brain telling us that we can&#8217;t do something because of x, y, and z. But that evil little voice is wrong! I know without a doubt, a lot if not all of us students will have moments of doubting ourselves while at DBC. And I think the best way to combat this is to pay attention to others and their attitude. If someone seems down on themselves we should reassure them that they are capable! And when we get down on ourselves we should remind ourselves how far we&#8217;ve come and seek help from others. The whole point of DBC is to foster a community to learn with and from. So it will be with this community that we will fight stereotype threat.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gimme Some Feedback!]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/19/gimme-some-feedback/"/>
+    <updated>2014-10-19T12:35:59-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/19/gimme-some-feedback</id>
+    <content type="html"><![CDATA[<p>Any musician will tell you that feedback is the worst! Have you ever been to a concert and heard a loud, shrieking, buzzing sound build up out of no where?! Yeah, it&#8217;s pretty horrible. But all of us at <a href="http://devbootcamp.com">DBC</a> love feedback! That is, giving and receiving feedback on our interpersonal and programming skills. We are learning so much, so fast, so it&#8217;s important to have some kind of indication on how we are doing.</p>
+
+
+<!-- more -->
+
+
+<p>So far, the main way us students are getting feedback is through pairing. For the most part, I have really enjoyed paired programming. I am always surprised by how efficiently we are able to work though a problem that would have probably taken me much longer to do alone. There&#8217;s always opportunity to learn and to teach. And on top of all that, we get the chance to work with many different kinds of people which is a great way to practice communication skills. When you are navigating while pairing with someone, you don&#8217;t have your hands on the code. Because of this, you really need to communicate clearly to get your ideas across to the other person. For something as technical as programming, this ability is very important. I&#8217;ve found that keeping communication flowing as much as possible leads to the best pairing sessions.</p>
+
+
+
+
+<p>After we pair, we then give the other student feedback, anonymously. When I read my feedback for the first time, I was a little nervous. I wasn&#8217;t sure how I would react if someone had something super critical to say. Of course, nothing like this happened and most people had lots of very positive things to say. I did notice a slight jump of my stomach when someone pointed out areas that I needed to improve, but I quickly reminded myself that this will help me grow. My feedback has taught me to be more assertive with my ideas when I know a better solution than my pair.</p>
+
+
+
+
+<p>When I first gave feedback to another student, I remember feeling a little conflicted about it. I really didn&#8217;t want to come off the wrong way, but I also didn&#8217;t want leave something out for the sake of someone&#8217;s feelings. I found that it is important to point out strengths and weaknesses of your pair so that they know what they are doing right, and what what they need to improve on. I&#8217;ve also found that being honest is the best thing to do while giving feedback.</p>
+
 ]]></content>
   </entry>
   

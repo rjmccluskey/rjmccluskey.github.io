@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Use a Ruby Class to Model a Book! - Rich Code</title>
+  <meta name="author" content="Rich McCluskey">
+
+  
+  <meta name="description" content="This week at DBC we learned how to create our own ruby classes. There's all kinds of classes already built into ruby, such as Integer, Array, and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Rich Code" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Rich Code</a></h1>
+  
+    <h2>Rich McCluskey | Software Developer</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="rjmccluskey.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/resume.pdf">Résumé</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Use a Ruby Class to Model a Book!</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-19T12:33:18-07:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:33 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This week at <a href="http://devbootcamp.com">DBC</a> we learned how to create our own ruby classes. There&#8217;s all kinds of classes already built into ruby, such as <span class="code">Integer</span>, <span class="code">Array</span>, and even <span class="code">Object</span>. Everything in ruby is an object and all objects are <span class="italic">instances</span> of a class. And just like how you can create your own objects, you can create your own classes too! In today&#8217;s entry, I will be showing you how to create a class to model a book!</p>
+
+
+<!-- more -->
+
+
+<p>There&#8217;s a lot we could put into our <span class="code">Book</span> class, but let&#8217;s just say that you want to model the total number of pages in your book, what page you are on, the ability to turn pages, and the ability to go to a specific page. The following code can be used to create our class with these functions:</p>
+
+
+
+
+<pre class="code-window">
+ 1     class Book
+ 2       def initialize(total_pages)
+ 3         raise ArgumentError.new("Please enter an Integer") if not total_pages.is_a? Integer
+ 4         @total_pages = total_pages
+ 5         @page = 1
+ 6       end
+ 7
+ 8       def page
+ 9         @page
+10       end
+11
+12       def page=(page)
+13         @page = page
+14       end
+15
+16       def turn_page
+17         @page += 1
+18       end
+19     end
+    </pre>
+
+
+
+
+<p>Now let&#8217;s go over what this all means. First, we create the class simply with <span class="code">class Book</span>. When you make a class, you then define methods that are specific to those class objects. These are called, <span class="italic">class instance methods</span>. In other words, these methods are <span class="italic">instances</span> of the class and only objects that are instances of that class can use them. We create our first instance method on line 2. The method <span class="code">initialize</span> is a special instance method that runs when we create a new class object. We can create a new book called <span class="code">my_book</span> like so:</p>
+
+
+
+
+<pre class="code-window">my_book = Book.new(200)</pre>
+
+
+
+
+<p>Going back to our code, you can see that <span class="code">initialize</span> takes one argument <spane class="code">total_pages</spane>. When we created <span class="code">my_book</span> it takes <span class="code">200</span> as the argument for <span class="code">initialize</span>. Line 3 will raise an <span class="code">ArgumentError</span> if we enter anything other than an <span class="code">Integer</span> when we create the <span class="code">Book</span>. In line 4, we create the <span class="italic">instance variable</span> <span class="code">@total_pages</span> and set it equal to our argument <span class="code">total_pages</span>. Instance variables are extremely important when creating a class because they can be called outside of an instance method&#8217;s definition. Line 5 creates another instance variable <span class="code">@page</span> and gives it a value of <span class="code">1</span>. When we make a new <span class="code">Book</span> object, we are automatically on page 1!</p>
+
+
+
+
+<p>Our next instance method <span class="code">page</span> is created on line 8. This simply returns the value of the instance variable <span class="code">@page</span>. So if we wanted to see what page we were on in <span class="code">my_book</span> we could do it like this:</p>
+
+
+
+
+<pre class="code-window">
+my_book.page
+=> 1 </pre>
+
+
+
+
+<p><span class="code">#page</span> is called a <span class="italic">reader method</span> because it reads the value of an instance variable. We can also make <span class="italic">writer methods</span> that will change the value of an instance variable. This is exactly what we do on line 12! We can change to any page number we want like so:</p>
+
+
+
+
+<pre class="code-window">my_book.page = 45
+=> @page = 45</pre>
+
+
+
+
+<p>You notice how we added spaces to the <span class="code">=</span> and we didn&#8217;t need the parentheses? This is some <span class="italic">syntax sugar</span> that ruby lets us do! Lastly, on line 16 we define our instance method to turn pages. As you can see, this method will add <span class="code">1</span> to <span class="code">@page</span>. As you probably guessed you call it like this:</p>
+
+
+
+
+<pre class="code-window">my_book.turn_page
+=> @page = 46</pre>
+
+
+
+
+<p>There you have it! Our very own ruby class just for books! Obviously, there&#8217;s a lot more we could add to this class definition. What if you want to turn pages the other way? What if we turn to a page that is greater than our total pages? What&#8217;s the name of the book? If you want some practice, try to go and add these on your own! But before I let you go there&#8217;s one last thing I want to tell you about. Remember those reader and writer methods? They are super common when making classes. In fact, they are so common that there is a shorthand way of creating them. We use <span class="italic">attribute methods</span> to do this! Our code can be refactored to the following with the <span class="code">attr_accessor</span> method:</p>
+
+
+
+
+<pre class="code-window">
+ 1     class Book
+ 2       attr_accessor :page
+ 3
+ 4       def initialize(total_pages)
+ 5         raise ArgumentError.new("Please enter an Integer") if not total_pages.is_a? Integer
+ 6         @total_pages = total_pages
+ 7         @page = 1
+ 8       end
+ 9
+10       def turn_page
+11         @page += 1
+12       end
+13     end
+</pre>
+
+
+
+
+<p>If we had just wanted to make a reader method we could have used <span class="code">attr_reader</span> and if we wanted to just make a writer method we could have used <span class="code">attr_writer</span>.</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Rich McCluskey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-19T12:33:18-07:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:33 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/" data-via="rjmccluskey" data-counturl="http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/12/dont-feed-the-patent-trolls/" title="Previous Post: Don't Feed the Patent Trolls!">&laquo; Don&#8217;t Feed the Patent Trolls!</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/10/19/gimme-some-feedback/" title="Next Post: Gimme Some Feedback!">Gimme Some Feedback! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/11/16/do-you-have-a-question/">Do You Have a Question?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/07/how-to-do-you-take-the-punches/">How to Do You Take the Punches?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/05/so-what-about-rails/">So What About Rails?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/02/what-do-you-value/">What Do You Value?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/11/02/iterations-ruby-vs-javascript/">Iterations - Ruby vs JavaScript</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>See me on GitHub!</h1>
+  
+  <a href="https://github.com/rjmccluskey">@rjmccluskey</a> on GitHub
+  
+  <script type="text/javascript">
+    // $(document).ready(function(){
+    //     if (!window.jXHR){
+    //         var jxhr = document.createElement('script');
+    //         jxhr.type = 'text/javascript';
+    //         jxhr.src = '/javascripts/libs/jXHR.js';
+    //         var s = document.getElementsByTagName('script')[0];
+    //         s.parentNode.insertBefore(jxhr, s);
+    //     }
+
+    //     github.showRepos({
+    //         user: 'rjmccluskey',
+    //         count: 0,
+    //         skip_forks: true,
+    //         target: '#gh_repos'
+    //     });
+    // });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Rich McCluskey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'richcode';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/';
+        var disqus_url = 'http://rjmccluskey.github.io/blog/2014/10/19/use-a-ruby-class-to-model-a-book/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
