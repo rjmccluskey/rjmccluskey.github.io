@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Don't Feed the Patent Trolls!"
+date: 2014-10-12 11:31:20 -0800
+comments: true
+categories: General
+---
+<p><a href="http://devbootcamp.com/">DBC</a> had us research some issues facing the tech industry today. Considering the massive size of this industry, it probably doesn't come to much of a surprise that there's plenty of issues out there. One that caught my eye (maybe because of the funny name) has to do with something called <span class="italic">patent trolls</span>.</p>
+<!-- more -->
+<p>So what exactly is a paten troll? If found this <a href="https://www.eff.org/issues/resources-patent-troll-victims">article</a> from the Electronic Frontier Foundation that explains it very well. In it they say:</p>
+
+<blockquote class="quote">"A patent troll uses patents as legal weapons, instead of actually creating any new products or coming up with new ideas. Instead, trolls are in the business of litigation (or even just threatening litigation). They often buy up patents cheaply from companies down on their luck who are looking to monetize what resources they have left, such as patents. Unfortunately, the Patent Office has a habit of issuing patents for ideas that are neither new nor revolutionary, and these patents can be very broad, covering everyday or commonsense types of computing – things that should never have been patented in the first place. Armed with these overbroad and vague patents, the troll will then send out threatening letters to those they argue infringe their patent(s).  These letters threaten legal action unless the alleged infringer agrees to pay a licensing fee, which can often range to the tens of thousands or even hundreds of thousands of dollars."</blockquote>
+
+<p>Now I named this entry <span class="italic">Don't Feed the Patent Trolls</span> in comparison to trolls that lurk on the Internet and say things to get a rise out of people. If you recognize that someone is being a troll you should just ignore them because the reaction is what they are looking for. While I made this connection for humor, this same strategy will not work on patent trolls. But how could we stop this type of patent abuse?</p>
+
+<p>Honestly, I don't have enough knowledge on the subject to really answer that, but I'll throw out some ideas that I saw while I was researching the subject. Right now, patent legislation is being revised in hopes to curb this abuse. But the problem might not be just localized to patents. In the United States, each party involved in a lawsuit is responsible for their own legal fees. In other places, such as in Europe, the loser of the lawsuit pays all the legal fees. Now I'm not really saying we should try to adopt a system like that in the U.S. but it is interesting that there is less of a problem with patent trolls in Europe because of this difference. It's much riskier for the patent troll to sue when there is a possibility that they will have to pay those extra fees. Perhaps another solution could be that the patent troll must have proof of production of the product in question to sue on the grounds of patent infringement. This might help fight against companies buying up patents with no desire to actually create something from such patent.</p>

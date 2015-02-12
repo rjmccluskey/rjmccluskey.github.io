@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Stereotypes are bad, mmkay"
+date: 2014-10-26 11:38:20 -0800
+comments: true
+categories: General
+---
+<p>Ever heard of <span class="italic">stereotype threat</span>? I hadn't before this week but <a href="http://devbootcamp.com">DBC</a> had us research it. It's a really interesting topic and I think everyone can benefit from understanding it. So what exactly is it? This <a href="http://www.reducingstereotypethreat.org/definition.html">article</a> explains it well:</p>
+<!-- more -->
+<blockquote class="quote">Stereotype threat refers to being at risk of confirming, as self-characteristic, a negative stereotype about one's group (<a href="http://www.reducingstereotypethreat.org/bibliography_steele_aronson.html">Steele & Aronson, 1995</a>). This term was first used by <a href="http://www.reducingstereotypethreat.org/bibliography_steele_aronson.html">Steele and Aronson (1995)</a> who showed in several experiments that Black college freshmen and sophomores performed more poorly on standardized tests than White students when their race was emphasized. When race was not emphasized, however, Black students performed better and equivalently with White students. The results showed that performance in academic contexts can be harmed by the awareness that one's behavior might be viewed through the lens of racial stereotypes.</blockquote>
+
+<p>While this research was done primarily in terms of race, stereotype threat can come in many forms. I noticed a long time before I signed up for DBC that I was interested in coding. I wished I knew it earlier so that I would have chosen to pursue a CS degree when applying to college. So for a while, I didn't believe I could switch careers and become a developer. I had already obtained a different degree and was heading on a different path. I know that this might not exactly have been a stereotype holding me back but it's the best way I can identify with the subject and I think it's something that a lot of us going to DBC have felt before.</p>
+
+<p>Stereotype threat is really that little naysayer inside our brain telling us that we can't do something because of x, y, and z. But that evil little voice is wrong! I know without a doubt, a lot if not all of us students will have moments of doubting ourselves while at DBC. And I think the best way to combat this is to pay attention to others and their attitude. If someone seems down on themselves we should reassure them that they are capable! And when we get down on ourselves we should remind ourselves how far we've come and seek help from others. The whole point of DBC is to foster a community to learn with and from. So it will be with this community that we will fight stereotype threat.</p>
