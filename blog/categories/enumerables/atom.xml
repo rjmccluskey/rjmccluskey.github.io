@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Enumerables | Rich Code]]></title>
+  <link href="http://rjmccluskey.github.io/blog/categories/enumerables/atom.xml" rel="self"/>
+  <link href="http://rjmccluskey.github.io/"/>
+  <updated>2015-02-12T11:30:07-08:00</updated>
+  <id>http://rjmccluskey.github.io/</id>
+  <author>
+    <name><![CDATA[Rich McCluskey]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby Enumerable Method: #cycle]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2014/10/12/ruby-enumerable-method-cycle/"/>
+    <updated>2014-10-12T12:05:59-07:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2014/10/12/ruby-enumerable-method-cycle</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been getting my hands dirty with algorithms this week and consequently I&#8217;ve been looking at built-in Ruby methods. Lots and lots of methods. It was a little daunting to see the massive lists of these methods on <a href="http://ruby-doc.org/core-2.1.3/index.html">Ruby Docs</a> but I am finally feeling less intimidated by them. I&#8217;m not even close to knowing all of them, but I&#8217;ve gotten pretty good with some of them. So guess what?! I&#8217;m going to teach you about the enumerable method, <a href="http://ruby-doc.org/core-2.1.3/Enumerable.html#method-i-cycle"><span class="code">#cycle</span></a>.</p>
+
+
+<!-- more -->
+
+
+<p>From <a href="http://ruby-doc.org/core-2.1.3/index.html">Ruby Docs</a>, the enumerable method <span class="code">#cycle</span> has the following syntax:</p>
+
+
+
+
+<pre class="code-window">
+  cycle(n=nil) { |obj| block }  ---> nil <br>
+  cycle(n=nil)  ---> an_enumerator
+</pre>
+
+
+
+
+<p><span class="code">#cycle</span> takes one argument (shown as <span class ="code">n</span> in the above syntax) and calls <span class="code">block</span> for each element of enum repeatedly <span class ="code">n</span> times, or forever if none or <span class="code">nil</span> is given. If a non-positive number is given, it doesn&#8217;t do anything. If the loop finishes without being interrupted, it returns <span class="code">nil</span>. Also, <span class="code">#cycle</span> is a non-destructive method, meaning that it will not alter the object we call it on. If no <span class="code">block</span> is given, it returns an enumerator instead.</p>
+
+
+
+
+<p>So the best way to understand how to use a new method is with some examples! Let&#8217;s print a grocery list 3 times so that we don&#8217;t forget what to buy.</p>
+
+
+
+
+<pre class="code-window">
+  grocery_list = ["milk","eggs","bread","salsa"] <br>
+  grocery_list.cycle(3) { |item| print item + " " } <br>
+  => milk eggs bread salsa milk eggs bread salsa milk eggs bread salsa
+</pre>
+
+
+
+
+<p>So there you have it! My quick little guide to how to use the enumerable method <span class="code">#cycle</span>. Get out there and try it for yourself!</p>
+
+]]></content>
+  </entry>
+  
+</feed>
