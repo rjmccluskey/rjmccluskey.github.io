@@ -4,7 +4,7 @@
   <title><![CDATA[Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-25T23:26:41-08:00</updated>
+  <updated>2015-02-25T23:32:43-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -18,7 +18,7 @@
     <link href="http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/"/>
     <updated>2015-02-25T22:37:34-08:00</updated>
     <id>http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server</id>
-    <content type="html"><![CDATA[<p>I&rsquo;ve been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had killed it. I had to figure out how to find the server running in the background and kill it with some sweet bash commands! I imagine I&rsquo;ll run into this problem again so I figured I&rsquo;d right a quick post about how to do it.</p>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had killed it. I had to figure out how to find the server running in the background and kill it with some sweet bash commands! I imagine I&rsquo;ll run into this problem again so I figured I&rsquo;d write a quick post about how to do it.</p>
 
 <!-- more -->
 
