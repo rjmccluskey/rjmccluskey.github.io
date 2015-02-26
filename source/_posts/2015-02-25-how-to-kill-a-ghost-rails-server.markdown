@@ -5,7 +5,7 @@ date: 2015-02-25 22:37:34 -0800
 comments: true
 categories:
 ---
-I've been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had killed it. I had to figure out how to find the server running in the background and kill it with some sweet bash commands! I imagine I'll run into this problem again so I figured I'd right a quick post about how to do it.
+I've been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had killed it. I had to figure out how to find the server running in the background and kill it with some sweet bash commands! I imagine I'll run into this problem again so I figured I'd write a quick post about how to do it.
 <!-- more -->
 The first step is to determine the PID of the ghost server. To do this enter the following command into your terminal:
 
