@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Javascript - Rich Code</title>
+  <title>How to Kill a Ghost Rails Server - Rich Code</title>
   <meta name="author" content="Rich McCluskey">
 
   
-  <meta name="description" content="Category: javascript">
+  <meta name="description" content="I&rsquo;ve been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rjmccluskey.github.io/blog/categories/javascript/">
+  <link rel="canonical" href="http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Rich Code" type="application/atom+xml">
@@ -79,37 +79,105 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Javascript</h1>
     
-    <h3>Category: javascript</h3>
+      <h1 class="entry-title">How to Kill a Ghost Rails Server</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-02-25T22:37:34-08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:37 pm</span></time>
+        
+      </p>
+    
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>I&rsquo;ve been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had killed it. I had to figure out how to find the server running in the background and kill it with some sweet bash commands! I imagine I&rsquo;ll run into this problem again so I figured I&rsquo;d right a quick post about how to do it.</p>
 
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/11/02/iterations-ruby-vs-javascript/">Iterations - Ruby vs JavaScript</a></h1>
-<time datetime="2014-11-02T12:01:25-08:00" pubdate><span class='month'>Nov</span> <span class='day'>02</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
-</footer>
+<!-- more -->
 
 
-</article>
+<p>The first step is to determine the PID of the ghost server. To do this enter the following command into your terminal:</p>
 
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'>lsof -wni tcp:3000
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you use a different port other than 3000 for your Rails server simply change the above command to have your port number instead of 3000. This command should spit out something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'>COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+</span><span class='line'>ruby    <span class="m">97750</span> Rich   11u  IPv6 0x96518f27a6f3295d      0t0  TCP <span class="o">[</span>::1<span class="o">]</span>:hbci <span class="o">(</span>LISTEN<span class="o">)</span>
+</span><span class='line'>ruby    <span class="m">97750</span> Rich   12u  IPv4 0x96518f27aa256e3d      0t0  TCP 127.0.0.1:hbci <span class="o">(</span>LISTEN<span class="o">)</span>
+</span><span class='line'>ruby    <span class="m">97750</span> Rich   13u  IPv6 0x96518f27a6f3251d      0t0  TCP <span class="o">[</span>fe80:1::1<span class="o">]</span>:hbci <span class="o">(</span>LISTEN<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Take note of the PID. This is the &lsquo;process identifier&rsquo; and we need it to kill our server. The last step is to enter the following command into your terminal:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nb">kill</span> -9 <span class="o">[</span>PID<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In my case, I would replace [PID] with 97750. That&rsquo;s all there is to it! Pretty simple once you know how.</p>
+
+<p>(source: <a href="http://stackoverflow.com/questions/15088163/cant-stop-rails-server">stackoverflow</a>)</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Rich McCluskey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-02-25T22:37:34-08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>10:37 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/" data-via="rjmccluskey" data-counturl="http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/02/12/im-a-programmer/" title="Previous Post: I'm a programmer">&laquo; I&#8217;m a programmer</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -190,7 +258,10 @@
       var disqus_shortname = 'richcode';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/';
+        var disqus_url = 'http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

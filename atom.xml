@@ -4,7 +4,7 @@
   <title><![CDATA[Rich Code]]></title>
   <link href="http://rjmccluskey.github.io/atom.xml" rel="self"/>
   <link href="http://rjmccluskey.github.io/"/>
-  <updated>2015-02-19T12:28:42-08:00</updated>
+  <updated>2015-02-25T23:26:41-08:00</updated>
   <id>http://rjmccluskey.github.io/</id>
   <author>
     <name><![CDATA[Rich McCluskey]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Kill a Ghost Rails Server]]></title>
+    <link href="http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server/"/>
+    <updated>2015-02-25T22:37:34-08:00</updated>
+    <id>http://rjmccluskey.github.io/blog/2015/02/25/how-to-kill-a-ghost-rails-server</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been working on a Rails-API for my latest project and I ran into a situation where my local server kept running even after I thought I had killed it. I had to figure out how to find the server running in the background and kill it with some sweet bash commands! I imagine I&rsquo;ll run into this problem again so I figured I&rsquo;d right a quick post about how to do it.</p>
+
+<!-- more -->
+
+
+<p>The first step is to determine the PID of the ghost server. To do this enter the following command into your terminal:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'>lsof -wni tcp:3000
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you use a different port other than 3000 for your Rails server simply change the above command to have your port number instead of 3000. This command should spit out something like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'>COMMAND   PID USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+</span><span class='line'>ruby    <span class="m">97750</span> Rich   11u  IPv6 0x96518f27a6f3295d      0t0  TCP <span class="o">[</span>::1<span class="o">]</span>:hbci <span class="o">(</span>LISTEN<span class="o">)</span>
+</span><span class='line'>ruby    <span class="m">97750</span> Rich   12u  IPv4 0x96518f27aa256e3d      0t0  TCP 127.0.0.1:hbci <span class="o">(</span>LISTEN<span class="o">)</span>
+</span><span class='line'>ruby    <span class="m">97750</span> Rich   13u  IPv6 0x96518f27a6f3251d      0t0  TCP <span class="o">[</span>fe80:1::1<span class="o">]</span>:hbci <span class="o">(</span>LISTEN<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Take note of the PID. This is the &lsquo;process identifier&rsquo; and we need it to kill our server. The last step is to enter the following command into your terminal:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nb">kill</span> -9 <span class="o">[</span>PID<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In my case, I would replace [PID] with 97750. That&rsquo;s all there is to it! Pretty simple once you know how.</p>
+
+<p>(source: <a href="http://stackoverflow.com/questions/15088163/cant-stop-rails-server">stackoverflow</a>)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I'm a Programmer]]></title>
